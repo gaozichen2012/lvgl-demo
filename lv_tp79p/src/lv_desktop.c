@@ -1,13 +1,14 @@
 #include "lv_desktop.h"
 #include "../lv_tp79p.h"
 
+static lv_obj_t *cont;
+static lv_style_t style_box;
+
 static lv_obj_t *tv;
 static lv_obj_t *t1;
 static lv_obj_t *t2;
 static lv_obj_t *t3;
 static lv_obj_t *t4;
-
-static lv_style_t style_box;
 
 void network_create(lv_obj_t *parent)
 {
@@ -46,6 +47,35 @@ void network_create(lv_obj_t *parent)
 
 void lv_desktop(void)
 {
+#if 1
+    //初始化一个style
+    lv_style_init(&style_box);
+
+    //add a value text properties
+    lv_style_set_value_align(&style_box, LV_STATE_DEFAULT, LV_ALIGN_OUT_TOP_LEFT);
+    lv_style_set_value_ofs_y(&style_box, LV_STATE_DEFAULT, -LV_DPX(10));
+    lv_style_set_margin_top(&style_box, LV_STATE_DEFAULT, LV_DPX(30));
+
+    //创建一个容器对象
+    lv_obj_t *cont = lv_cont_create(lv_scr_act(), NULL);
+
+    //Get the size category of the display based on it's hor. res. and dpi.
+    lv_disp_size_t disp_size = lv_disp_get_size_category(NULL);
+
+    lv_cont_set_layout(cont, LV_LAYOUT_PRETTY_MID);
+    //将新样式添加到对象的样式列表。
+    lv_obj_add_style(cont, LV_CONT_PART_MAIN, &style_box);
+    //启用使用父项进行拖动相关的操作。如果尝试拖动对象，则父级将被移动
+    lv_obj_set_drag_parent(cont, true);
+
+    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "Basics");
+
+    lv_obj_t *btn = lv_btn_create(cont, NULL);
+    lv_btn_set_fit2(btn, LV_FIT_NONE, LV_FIT_TIGHT);
+    lv_obj_t *label = lv_label_create(btn, NULL);
+    lv_label_set_text(label, "Button");
+
+#else
     //lv_scr_act()获取默认显示的活动屏幕的指针
     //lv_tabview_create()创建一个tabview()
     tv = lv_tabview_create(lv_scr_act(), NULL);
@@ -64,4 +94,5 @@ void lv_desktop(void)
     lv_style_set_margin_top(&style_box, LV_STATE_DEFAULT, LV_DPX(30));
 
     network_create(t1);
+#endif
 }
