@@ -8225,7 +8225,7 @@
 	"lvgl.h"
 	"lvgl/lvgl.h"
 
-1619763407 f:\0-repository\lvgl-demo\lv_drv_conf.h
+1619768436 f:\0-repository\lvgl-demo\lv_drv_conf.h
 	"lv_conf.h"
 
 1619763407 f:\0-repository\lvgl-demo\lv_conf.h
@@ -10034,7 +10034,7 @@
 	"../lv_themes/lv_theme.h"
 	"../lv_core/lv_disp.h"
 
-1619763407 source:f:\0-repository\lvgl-demo\main.c
+1619768224 source:f:\0-repository\lvgl-demo\main.c
 	<stdlib.h>
 	<unistd.h>
 	"lvgl/lvgl.h"
