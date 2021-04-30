@@ -58,7 +58,8 @@ int main(int argc, char** argv)
     lv_disp_set_default(lv_windows_disp);
 
     /*Run the v7 demo*/
-    lv_demo_widgets();
+    //lv_demo_widgets();
+    lv_desktop();
 
 #if WIN32
     while(!lv_win_exit_flag) {
