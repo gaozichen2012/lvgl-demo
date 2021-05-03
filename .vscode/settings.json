@@ -7,7 +7,8 @@
         "lvgl.h": "c",
         "lv_tp79p.h": "c",
         "lv_menu_net.h": "c",
-        "lv_list.h": "c"
+        "lv_list.h": "c",
+        "lv_ex_conf.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
