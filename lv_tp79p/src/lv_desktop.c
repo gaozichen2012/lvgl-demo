@@ -46,7 +46,21 @@ lv_obj_t *analog_display_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     return cont;
 }
 
-lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
+static void btn_ok_event_cb(lv_obj_t *obj, lv_event_t event)
+{
+    if (event == LV_EVENT_CLICKED)
+    {
+        printf("Clicked\n");
+    }
+    else if (event == LV_EVENT_VALUE_CHANGED)
+    {
+        printf("Toggled\n");
+
+        lv_scr_load(menu_src);
+    }
+}
+
+static lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
     lv_obj_t *cont;
 
@@ -55,20 +69,13 @@ lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
 
     lv_obj_t *btn = lv_btn_create(cont, NULL);
-    lv_obj_set_event_cb(btn, event_handler);
+    lv_obj_set_event_cb(btn, btn_ok_event_cb);
     lv_obj_set_size(btn, 32, 16);
     lv_obj_align(btn, cont, LV_ALIGN_IN_LEFT_MID, 0, 0);
-    lv_obj_t *label = lv_label_create(btn, NULL);
-    lv_label_set_text(label, "Okey");
-
-    btn = lv_btn_create(cont, NULL);
-    lv_obj_set_event_cb(btn, event_handler);
-    lv_obj_set_size(btn, 32, 16);
-    lv_obj_align(btn, cont, LV_ALIGN_IN_RIGHT_MID, 0, 0);
     lv_btn_set_checkable(btn, true);
     lv_btn_toggle(btn);
-    label = lv_label_create(btn, NULL);
-    lv_label_set_text(label, "Back");
+    lv_obj_t *label = lv_label_create(btn, NULL);
+    lv_label_set_text(label, "Menu");
 
     return cont;
 }

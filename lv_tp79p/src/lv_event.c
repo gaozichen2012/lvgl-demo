@@ -14,6 +14,7 @@ void event_handler(lv_obj_t *obj, lv_event_t event)
     else if (event == LV_EVENT_VALUE_CHANGED)
     {
         printf("Toggled\n");
+
         if (test_flg == 0)
         {
             test_flg = 1;

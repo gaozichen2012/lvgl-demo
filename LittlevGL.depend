@@ -11894,13 +11894,13 @@
 	"lv_tp79p/src/lv_startup.h"
 	<windows.h>
 
-1620037312 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
+1620039279 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
 	"../lv_tp79p.h"
 	"lv_desktop.h"
 
 1620033941 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_desktop.h
 
-1620033775 d:\3-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
+1620039927 d:\3-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
 	"lvgl.h"
 	"../lvgl/lvgl.h"
 	"lv_ex_conf.h"
@@ -11909,26 +11909,34 @@
 	"src/lv_event.h"
 	"src/lv_desktop.h"
 	"src/lv_menu.h"
+	"src/lv_menu_net.h"
 
-1620037001 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_startup.h
+1620040044 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_startup.h
 
 1620033524 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_event.h
 
 1620033880 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_menu.h
 
-1620033958 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_event.c
+1620039157 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_event.c
 	"../lv_tp79p.h"
 	"lv_event.h"
 	"lv_startup.h"
 
-1620037006 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
+1620040125 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
 	"../lv_tp79p.h"
 	"lv_startup.h"
 	"lv_desktop.h"
 	"lv_menu.h"
+	"lv_menu_net.h"
 	"lv_event.h"
 
-1620036567 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
+1620041113 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
 	"../lv_tp79p.h"
 	"lv_menu.h"
+
+1620040182 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_menu_net.h
+
+1620039999 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_menu_net.c
+	"../lv_tp79p.h"
+	"lv_menu_net.h"
 

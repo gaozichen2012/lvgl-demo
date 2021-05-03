@@ -3,21 +3,24 @@
 
 #include "lv_desktop.h"
 #include "lv_menu.h"
+#include "lv_menu_net.h"
 #include "lv_event.h"
 
 lv_obj_t *desktop_src;
 lv_obj_t *menu_src;
+lv_obj_t *menu_net_src;
 
 void lv_startup(void)
 {
     desktop_src = lv_obj_create(NULL, NULL);
     menu_src = lv_obj_create(NULL, NULL);
-
+    menu_net_src = lv_obj_create(NULL, NULL);
     //lv_disp_set_default(desktop_src);
     //lv_scr_act()
 
     lv_desktop(desktop_src);
     lv_menu(menu_src);
+    lv_menu_net(menu_net_src);
 
     lv_scr_load(desktop_src);
 }

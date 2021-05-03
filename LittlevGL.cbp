@@ -510,6 +510,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lv_tp79p/src/lv_menu.h" />
+		<Unit filename="lv_tp79p/src/lv_menu_net.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_tp79p/src/lv_menu_net.h" />
 		<Unit filename="lv_tp79p/src/lv_startup.c">
 			<Option compilerVar="CC" />
 		</Unit>
