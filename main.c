@@ -13,9 +13,8 @@
 #include "lvgl/lvgl.h"
 #include "lv_drivers/win_drv.h"
 #include "lv_examples/src/lv_demo_widgets/lv_demo_widgets.h"
-
+#include "lv_tp79p/src/lv_startup.h"
 #include <windows.h>
-
 
 /*********************
  *      DEFINES
@@ -45,7 +44,7 @@ static int tick_thread(void *data);
 #if WIN32
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR szCmdLine, int nCmdShow)
 #else
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 #endif // WIN32
 {
     /*Initialize LittlevGL*/
@@ -59,17 +58,19 @@ int main(int argc, char** argv)
 
     /*Run the v7 demo*/
     //lv_demo_widgets();
-    lv_desktop();
+    lv_startup();
 
 #if WIN32
-    while(!lv_win_exit_flag) {
+    while (!lv_win_exit_flag)
+    {
 #else
-    while(1) {
+    while (1)
+    {
 #endif // WIN32
         /* Periodically call the lv_task handler.
          * It could be done in a timer interrupt or an OS task too.*/
         lv_task_handler();
-        usleep(1000);       /*Just to let the system breath*/
+        usleep(1000); /*Just to let the system breath*/
     }
     return 0;
 }
@@ -88,7 +89,7 @@ static void hal_init(void)
      * Use the 'monitor' driver which creates window on PC's monitor to simulate a display*/
     monitor_init();
     lv_disp_drv_t disp_drv;
-    lv_disp_drv_init(&disp_drv);            /*Basic initialization*/
+    lv_disp_drv_init(&disp_drv); /*Basic initialization*/
     disp_drv.disp_flush = monitor_flush;
     disp_drv.disp_fill = monitor_fill;
     disp_drv.disp_map = monitor_map;
@@ -98,9 +99,9 @@ static void hal_init(void)
      * Use the 'mouse' driver which reads the PC's mouse*/
     mouse_init();
     lv_indev_drv_t indev_drv;
-    lv_indev_drv_init(&indev_drv);          /*Basic initialization*/
+    lv_indev_drv_init(&indev_drv); /*Basic initialization*/
     indev_drv.type = LV_INDEV_TYPE_POINTER;
-    indev_drv.read = mouse_read;         /*This function will be called periodically (by the library) to get the mouse position and state*/
+    indev_drv.read = mouse_read; /*This function will be called periodically (by the library) to get the mouse position and state*/
     lv_indev_drv_register(&indev_drv);
 
     /* Tick init.
@@ -120,9 +121,10 @@ static void hal_init(void)
  */
 static int tick_thread(void *data)
 {
-    while(1) {
+    while (1)
+    {
         lv_tick_inc(1);
-        SDL_Delay(1);   /*Sleep for 1 millisecond*/
+        SDL_Delay(1); /*Sleep for 1 millisecond*/
     }
 
     return 0;

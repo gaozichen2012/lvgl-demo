@@ -500,15 +500,20 @@
 		<Unit filename="lv_examples/src/lv_examples.h" />
 		<Unit filename="lv_tp79p/src/lv_desktop.c">
 			<Option compilerVar="CC" />
-			<Option target="Debug" />
 		</Unit>
-		<Unit filename="lv_tp79p/src/lv_desktop.h">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="lv_tp79p/src/lvgl_startup.c">
+		<Unit filename="lv_tp79p/src/lv_desktop.h" />
+		<Unit filename="lv_tp79p/src/lv_event.c">
 			<Option compilerVar="CC" />
-			<Option target="Debug" />
 		</Unit>
+		<Unit filename="lv_tp79p/src/lv_event.h" />
+		<Unit filename="lv_tp79p/src/lv_menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_tp79p/src/lv_menu.h" />
+		<Unit filename="lv_tp79p/src/lv_startup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_tp79p/src/lv_startup.h" />
 		<Unit filename="lv_tp79p/src/lvgl_startup.h">
 			<Option target="Debug" />
 		</Unit>

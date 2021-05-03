@@ -1,98 +1,94 @@
-#include "lv_desktop.h"
 #include "../lv_tp79p.h"
+#include "lv_desktop.h"
 
 static lv_obj_t *cont;
-static lv_style_t style_box;
 
-static lv_obj_t *tv;
-static lv_obj_t *t1;
-static lv_obj_t *t2;
-static lv_obj_t *t3;
-static lv_obj_t *t4;
-
-void network_create(lv_obj_t *parent)
+lv_obj_t *net_notification_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
-    //设置页面可滚动部分的布局
-    lv_page_set_scrl_layout(parent, LV_LAYOUT_PRETTY_TOP);
+    lv_obj_t *cont;
 
-    //Get the size category of the display based on it's hor. res. and dpi.
-    lv_disp_size_t disp_size = lv_disp_get_size_category(NULL);
-    //划分对象的宽度并获得给定列数的宽度。还应考虑背景的填充和可滚动的填充。
-    lv_coord_t grid_w = lv_page_get_width_grid(parent, disp_size <= LV_DISP_SIZE_SMALL ? 1 : 2, 1);
-
-    //创建一个容器对象
-    lv_obj_t *h = lv_cont_create(parent, NULL);
-    lv_cont_set_layout(h, LV_LAYOUT_PRETTY_MID);
-    //将新样式添加到对象的样式列表。
-    lv_obj_add_style(h, LV_CONT_PART_MAIN, &style_box);
-    //启用使用父项进行拖动相关的操作。如果尝试拖动对象，则父级将被移动
-    lv_obj_set_drag_parent(h, true);
-
-    lv_obj_set_style_local_value_str(h, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "Basics");
-
-    //分别水平和垂直设置适合策略。它告诉您如何自动更改容器的大小。
-    lv_cont_set_fit2(h, LV_FIT_NONE, LV_FIT_TIGHT);
-    lv_obj_set_width(h, grid_w);
-    lv_obj_t *btn = lv_btn_create(h, NULL);
-    lv_btn_set_fit2(btn, LV_FIT_NONE, LV_FIT_TIGHT);
-    lv_obj_set_width(btn, lv_obj_get_width_grid(h, disp_size <= LV_DISP_SIZE_SMALL ? 1 : 2, 1));
-    lv_obj_t *label = lv_label_create(btn, NULL);
-    lv_label_set_text(label, "Button");
-
-    btn = lv_btn_create(h, btn);
-    lv_btn_toggle(btn);
-    label = lv_label_create(btn, NULL);
-    lv_label_set_text(label, "Button");
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 160, 16);
+    lv_obj_align(cont, obj_ref, LV_ALIGN_IN_TOP_MID, 0, 0);
+    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_notification");
+    return cont;
 }
 
-void lv_desktop(void)
+lv_obj_t *net_display_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
-#if 1
-    //初始化一个style
-    lv_style_init(&style_box);
+    lv_obj_t *cont;
 
-    //add a value text properties
-    lv_style_set_value_align(&style_box, LV_STATE_DEFAULT, LV_ALIGN_OUT_TOP_LEFT);
-    lv_style_set_value_ofs_y(&style_box, LV_STATE_DEFAULT, -LV_DPX(10));
-    lv_style_set_margin_top(&style_box, LV_STATE_DEFAULT, LV_DPX(30));
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 160, 40);
+    lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
+    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
+    return cont;
+}
+lv_obj_t *analog_notification_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
+{
+    lv_obj_t *cont;
 
-    //创建一个容器对象
-    lv_obj_t *cont = lv_cont_create(lv_scr_act(), NULL);
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 160, 16);
+    lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
+    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "analog_notification");
+    return cont;
+}
 
-    //Get the size category of the display based on it's hor. res. and dpi.
-    lv_disp_size_t disp_size = lv_disp_get_size_category(NULL);
+lv_obj_t *analog_display_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
+{
+    lv_obj_t *cont;
 
-    lv_cont_set_layout(cont, LV_LAYOUT_PRETTY_MID);
-    //将新样式添加到对象的样式列表。
-    lv_obj_add_style(cont, LV_CONT_PART_MAIN, &style_box);
-    //启用使用父项进行拖动相关的操作。如果尝试拖动对象，则父级将被移动
-    lv_obj_set_drag_parent(cont, true);
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 160, 40);
+    lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
+    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "analog_display");
+    return cont;
+}
 
-    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "Basics");
+lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
+{
+    lv_obj_t *cont;
+
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 160, 16);
+    lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
 
     lv_obj_t *btn = lv_btn_create(cont, NULL);
-    lv_btn_set_fit2(btn, LV_FIT_NONE, LV_FIT_TIGHT);
+    lv_obj_set_event_cb(btn, event_handler);
+    lv_obj_set_size(btn, 32, 16);
+    lv_obj_align(btn, cont, LV_ALIGN_IN_LEFT_MID, 0, 0);
     lv_obj_t *label = lv_label_create(btn, NULL);
-    lv_label_set_text(label, "Button");
+    lv_label_set_text(label, "Okey");
 
-#else
-    //lv_scr_act()获取默认显示的活动屏幕的指针
-    //lv_tabview_create()创建一个tabview()
-    tv = lv_tabview_create(lv_scr_act(), NULL);
+    btn = lv_btn_create(cont, NULL);
+    lv_obj_set_event_cb(btn, event_handler);
+    lv_obj_set_size(btn, 32, 16);
+    lv_obj_align(btn, cont, LV_ALIGN_IN_RIGHT_MID, 0, 0);
+    lv_btn_set_checkable(btn, true);
+    lv_btn_toggle(btn);
+    label = lv_label_create(btn, NULL);
+    lv_label_set_text(label, "Back");
 
-    t1 = lv_tabview_add_tab(tv, "Network");
-    t2 = lv_tabview_add_tab(tv, "Anglog");
-    t3 = lv_tabview_add_tab(tv, "Mix");
-    t4 = lv_tabview_add_tab(tv, "Mix");
+    return cont;
+}
 
-    //初始化一个style
-    lv_style_init(&style_box);
+void lv_desktop(lv_obj_t *parent)
+{
+    lv_obj_t *cont_1, *cont_2, *cont_3, *cont_4, *cont_5;
 
-    //add a value text properties
-    lv_style_set_value_align(&style_box, LV_STATE_DEFAULT, LV_ALIGN_OUT_TOP_LEFT);
-    lv_style_set_value_ofs_y(&style_box, LV_STATE_DEFAULT, -LV_DPX(10));
-    lv_style_set_margin_top(&style_box, LV_STATE_DEFAULT, LV_DPX(30));
+    //创建一个容器对象
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 160, 128);
+    // lv_obj_set_auto_realign(cont, true);                   /*Auto realign when the size changes*/
+    // lv_obj_align_origo(cont, NULL, LV_ALIGN_CENTER, 0, 0); /*This parametrs will be sued when realigned*/
+    // lv_cont_set_fit(cont, LV_FIT_TIGHT);
+    // lv_cont_set_layout(cont, LV_LAYOUT_COLUMN_MID);
 
-    network_create(t1);
-#endif
+    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "Basics");
+    cont_1 = net_notification_bar(cont, cont);
+    cont_2 = net_display_bar(cont, cont_1);
+    cont_3 = analog_notification_bar(cont, cont_2);
+    cont_4 = analog_display_bar(cont, cont_3);
+    cont_5 = bottom_bar(cont, cont_4);
 }

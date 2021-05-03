@@ -27,8 +27,10 @@ extern "C"
 #include "../lv_ex_conf.h"
 #endif
 
+#include "src/lv_startup.h"
+#include "src/lv_event.h"
 #include "src/lv_desktop.h"
-
+#include "src/lv_menu.h"
 /*********************
  *      DEFINES
  *********************/
@@ -37,15 +39,15 @@ extern "C"
 #error "lv_examples: Wrong lvgl version"
 #endif
 
-    /**********************
+   /**********************
  *      TYPEDEFS
  **********************/
 
-    /**********************
+   /**********************
  * GLOBAL PROTOTYPES
  **********************/
 
-    /**********************
+   /**********************
  *      MACROS
  **********************/
 
