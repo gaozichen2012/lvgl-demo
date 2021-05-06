@@ -498,6 +498,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lv_examples/src/lv_examples.h" />
+		<Unit filename="lv_tp79p/assets/freq_20x20.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lv_tp79p/src/lv_desktop.c">
 			<Option compilerVar="CC" />
 		</Unit>

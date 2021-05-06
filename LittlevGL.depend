@@ -11894,7 +11894,7 @@
 	"lv_tp79p/src/lv_startup.h"
 	<windows.h>
 
-1620039279 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
+1620314990 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
 	"../lv_tp79p.h"
 	"lv_desktop.h"
 
@@ -11922,7 +11922,7 @@
 	"lv_event.h"
 	"lv_startup.h"
 
-1620040125 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
+1620045321 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
 	"../lv_tp79p.h"
 	"lv_startup.h"
 	"lv_desktop.h"
@@ -11939,4 +11939,8 @@
 1620039999 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_menu_net.c
 	"../lv_tp79p.h"
 	"lv_menu_net.h"
+
+1620313562 source:d:\3-repository\lvgl-demo\lv_tp79p\assets\freq_20x20.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
 

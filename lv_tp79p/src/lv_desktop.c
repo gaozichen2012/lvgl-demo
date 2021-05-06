@@ -1,6 +1,8 @@
 #include "../lv_tp79p.h"
 #include "lv_desktop.h"
 
+LV_IMG_DECLARE(freq_20x20);
+
 static lv_obj_t *cont;
 
 lv_obj_t *net_notification_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
@@ -21,7 +23,16 @@ lv_obj_t *net_display_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     cont = lv_cont_create(parent, NULL);
     lv_obj_set_size(cont, 160, 40);
     lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
-    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
+    // lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
+
+    lv_obj_t *img1 = lv_img_create(cont, NULL);
+    lv_img_set_src(img1, LV_SYMBOL_PLUS "Tom 1");
+    lv_obj_align(img1, cont, LV_ALIGN_IN_TOP_LEFT, 20, 5);
+
+    lv_obj_t *img2 = lv_img_create(cont, NULL);
+    lv_img_set_src(img2, LV_SYMBOL_HOME "Group 1");
+    lv_obj_align(img2, img1, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
+
     return cont;
 }
 lv_obj_t *analog_notification_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
@@ -42,7 +53,19 @@ lv_obj_t *analog_display_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     cont = lv_cont_create(parent, NULL);
     lv_obj_set_size(cont, 160, 40);
     lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
-    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "analog_display");
+
+    lv_obj_t *img1 = lv_img_create(cont, NULL);
+    lv_img_set_src(img1, &freq_20x20);
+    lv_obj_align(img1, cont, LV_ALIGN_IN_LEFT_MID, 15, 0);
+
+    lv_obj_t *label1 = lv_label_create(cont, NULL);
+    lv_obj_align(label1, img1, LV_ALIGN_OUT_RIGHT_MID, 0, 0);
+    lv_label_set_text(label1, "432.12340");
+
+    lv_obj_t *label2 = lv_label_create(cont, NULL);
+    lv_obj_align(label2, label1, LV_ALIGN_OUT_RIGHT_MID, 15, 0);
+    lv_label_set_text(label2, "CH001");
+
     return cont;
 }
 
