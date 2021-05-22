@@ -8287,7 +8287,7 @@
 	"../lv_conf_internal.h"
 	<stdint.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_conf_internal.h
+1621425965 f:\0-repository\lvgl-demo\lvgl\src\lv_conf_internal.h
 	<stdint.h>
 	"lv_conf.h"
 	"../../lv_conf.h"
@@ -10034,26 +10034,31 @@
 	"../lv_themes/lv_theme.h"
 	"../lv_core/lv_disp.h"
 
-1619768224 source:f:\0-repository\lvgl-demo\main.c
+1621424965 source:f:\0-repository\lvgl-demo\main.c
 	<stdlib.h>
 	<unistd.h>
 	"lvgl/lvgl.h"
 	"lv_drivers/win_drv.h"
 	"lv_examples/src/lv_demo_widgets/lv_demo_widgets.h"
+	"lv_tp79p/src/lv_startup.h"
 	<windows.h>
 
-1619771932 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
-	"lv_desktop.h"
+1621675782 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
 	"../lv_tp79p.h"
+	"lv_desktop.h"
 
-1619523132 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.h
+1620899702 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.h
 
-1619768194 f:\0-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
+1620899702 f:\0-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
 	"lvgl.h"
 	"../lvgl/lvgl.h"
 	"lv_ex_conf.h"
 	"../lv_ex_conf.h"
+	"src/lv_startup.h"
+	"src/lv_event.h"
 	"src/lv_desktop.h"
+	"src/lv_menu.h"
+	"src/lv_menu_net.h"
 
 1619838463 source:d:\3-repository\lvgl-demo\lv_drivers\display\fbdev.c
 	"fbdev.h"
@@ -11943,4 +11948,37 @@
 1620313562 source:d:\3-repository\lvgl-demo\lv_tp79p\assets\freq_20x20.c
 	"lvgl.h"
 	"lvgl/lvgl.h"
+
+1620899702 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\freq_20x20.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1620899702 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_startup.h
+
+1620899702 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_event.h
+
+1620899702 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu.h
+
+1620899702 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu_net.h
+
+1621675441 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_event.c
+	"../lv_tp79p.h"
+	"lv_event.h"
+	"lv_startup.h"
+
+1621675878 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
+	"../lv_tp79p.h"
+	"lv_menu.h"
+
+1621675803 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu_net.c
+	"../lv_tp79p.h"
+	"lv_menu_net.h"
+
+1621675658 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
+	"../lv_tp79p.h"
+	"lv_startup.h"
+	"lv_desktop.h"
+	"lv_menu.h"
+	"lv_menu_net.h"
+	"lv_event.h"
 

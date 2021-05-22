@@ -1,6 +1,8 @@
 #include "../lv_tp79p.h"
 #include "lv_menu.h"
 
+extern lv_obj_t *scr;
+
 static lv_obj_t *list1;
 static lv_obj_t *list_btn1, *list_btn2, *list_btn3, *list_btn4;
 
@@ -24,7 +26,7 @@ static void btn_ok_event_cb(lv_obj_t *obj, lv_event_t event)
     {
         printf("Toggled\n");
 
-        lv_scr_load(menu_net_src);
+        page_switch(2);
     }
 }
 
@@ -38,7 +40,7 @@ static void btn_back_event_cb(lv_obj_t *obj, lv_event_t event)
     {
         printf("Toggled\n");
 
-        lv_scr_load(desktop_src);
+        page_switch(0);
     }
 }
 
@@ -162,7 +164,7 @@ static lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
 void lv_menu(lv_obj_t *parent)
 {
     /*Create a list*/
-    list1 = lv_list_create(parent, NULL);
+    list1 = lv_list_create(scr, NULL);
     lv_obj_set_size(list1, 160, 128 - 16);
     lv_obj_align(list1, NULL, LV_ALIGN_IN_TOP_MID, 0, 0);
 
@@ -179,5 +181,5 @@ void lv_menu(lv_obj_t *parent)
     list_btn4 = lv_list_add_btn(list1, LV_SYMBOL_SETTINGS, "General settings");
     lv_obj_set_event_cb(list_btn4, list_event_handler);
 
-    bottom_bar(parent, list1);
+    bottom_bar(scr, list1);
 }
