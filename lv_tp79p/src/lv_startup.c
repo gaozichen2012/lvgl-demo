@@ -6,10 +6,9 @@
 #include "lv_menu_net.h"
 #include "lv_event.h"
 
-lv_obj_t *scr = NULL;
-lv_obj_t *desktop_src = NULL;
-lv_obj_t *menu_src = NULL;
-lv_obj_t *menu_net_src = NULL;
+lv_obj_t *desktop_src;
+lv_obj_t *menu_src;
+lv_obj_t *menu_net_src;
 
 static lv_style_t style_box;
 
@@ -18,24 +17,25 @@ void page_switch(unsigned char page)
     switch (page)
     {
     case 0:
-        //lv_obj_del(desktop_src);
-        lv_obj_del(menu_src);
-        lv_obj_del(menu_net_src);
+        //lv_obj_clean(desktop_src);
+        lv_obj_clean(menu_src);
+        lv_obj_clean(menu_net_src);
         lv_desktop(desktop_src);
+        lv_scr_load(desktop_src);
         break;
     case 1:
-        lv_obj_del(desktop_src);
-        //lv_obj_del(menu_src);
-        lv_obj_del(menu_net_src);
+        lv_obj_clean(desktop_src);
+        //lv_obj_clean(menu_src);
+        lv_obj_clean(menu_net_src);
         lv_menu(menu_src);
-
+        lv_scr_load(menu_src);
         break;
     case 2:
-        lv_obj_del(desktop_src);
-        lv_obj_del(menu_src);
-        //lv_obj_del(menu_net_src);
+        lv_obj_clean(desktop_src);
+        lv_obj_clean(menu_src);
+        //lv_obj_clean(menu_net_src);
         lv_menu_net(menu_net_src);
-
+        lv_scr_load(menu_net_src);
         break;
     case 3:
         /* code */
@@ -49,8 +49,6 @@ void page_switch(unsigned char page)
 void lv_startup(void)
 {
 #if 1
-    scr = lv_scr_act();
-
     desktop_src = lv_obj_create(NULL, NULL);
     menu_src = lv_obj_create(NULL, NULL);
     menu_net_src = lv_obj_create(NULL, NULL);
@@ -67,7 +65,7 @@ void lv_startup(void)
     lv_obj_add_style(menu_net_src, LV_BTN_PART_MAIN, &style_box);
 #endif
 
-    lv_desktop(desktop_src);
+    page_switch(0);
 #else
     desktop_src = lv_obj_create(NULL, NULL);
     menu_src = lv_obj_create(NULL, NULL);

@@ -69,7 +69,7 @@ static lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
 void lv_menu_net(lv_obj_t *parent)
 {
     /*Create a list*/
-    lv_obj_t *list1 = lv_list_create(scr, NULL);
+    lv_obj_t *list1 = lv_list_create(parent, NULL);
     lv_obj_set_size(list1, 160, 128 - 16);
     lv_obj_align(list1, NULL, LV_ALIGN_IN_TOP_MID, 0, 0);
 
@@ -94,5 +94,5 @@ void lv_menu_net(lv_obj_t *parent)
     list_btn = lv_list_add_btn(list1, LV_SYMBOL_SETTINGS, "POC settings");
     lv_obj_set_event_cb(list_btn, list_event_handler);
 
-    bottom_bar(scr, list1);
+    bottom_bar(parent, list1);
 }

@@ -108,7 +108,7 @@ void lv_desktop(lv_obj_t *parent)
     lv_obj_t *cont_1, *cont_2, *cont_3, *cont_4, *cont_5;
 
     //创建一个容器对象
-    cont = lv_cont_create(scr, NULL);
+    cont = lv_cont_create(parent, NULL);
     lv_obj_set_size(cont, 160, 128);
     // lv_obj_set_auto_realign(cont, true);                   /*Auto realign when the size changes*/
     // lv_obj_align_origo(cont, NULL, LV_ALIGN_CENTER, 0, 0); /*This parametrs will be sued when realigned*/
