@@ -14,20 +14,13 @@ static lv_obj_t *t5;
 
 static group_create(lv_obj_t *parent)
 {
-    lv_obj_t *cont;
-
-    cont = lv_cont_create(parent, NULL);
-    lv_obj_set_size(cont, 80, 60);
-    lv_obj_align(cont, NULL, LV_ALIGN_CENTER, 0, 0);
-    // lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
-
-    lv_obj_t *label1 = lv_label_create(cont, NULL);
+    lv_obj_t *label1 = lv_label_create(parent, NULL);
     lv_label_set_text(label1, "GROUP");
-    lv_obj_align(label1, cont, LV_ALIGN_IN_TOP_MID, 0, 0);
+    lv_obj_align(label1, parent, LV_ALIGN_IN_TOP_MID, 0, 0);
 
-    lv_obj_t *img1 = lv_img_create(cont, NULL);
+    lv_obj_t *img1 = lv_img_create(parent, NULL);
     lv_img_set_src(img1, &group_20x20);
-    lv_obj_align(img1, cont, LV_ALIGN_CENTER, 0, 0);
+    lv_obj_align(img1, parent, LV_ALIGN_CENTER, 0, 0);
 }
 
 static member_create(lv_obj_t *parent)
@@ -280,5 +273,5 @@ void lv_menu(lv_obj_t *parent)
     gps_create(t4);
     setting_create(t5);
 
-    bottom_bar(parent, list1);
+    bottom_bar(cont, cont);
 }
