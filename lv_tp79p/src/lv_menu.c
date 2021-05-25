@@ -1,6 +1,10 @@
 #include "../lv_tp79p.h"
 #include "lv_menu.h"
 
+LV_IMG_DECLARE(user_20x20);
+LV_IMG_DECLARE(group_20x20);
+LV_IMG_DECLARE(freq_20x20);
+
 static lv_obj_t *tv;
 static lv_obj_t *t1;
 static lv_obj_t *t2;
@@ -8,41 +12,94 @@ static lv_obj_t *t3;
 static lv_obj_t *t4;
 static lv_obj_t *t5;
 
-void lv_menu(lv_obj_t *parent)
+static group_create(lv_obj_t *parent)
 {
-    tv = lv_tabview_create(parent, NULL);
+    lv_obj_t *cont;
 
-    t1 = lv_tabview_add_tab(tv, "Group");
-    t2 = lv_tabview_add_tab(tv, "Member");
-    t3 = lv_tabview_add_tab(tv, "Friend");
-    t4 = lv_tabview_add_tab(tv, "GPS");
-    t5 = lv_tabview_add_tab(tv, "Setting");
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 80, 60);
+    lv_obj_align(cont, NULL, LV_ALIGN_CENTER, 0, 0);
+    // lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
 
-    group_create(t1);
-    member_create(t2);
-    friend_create(t3);
-    gps_create(t4);
-    setting_create(t5);
+    lv_obj_t *label1 = lv_label_create(cont, NULL);
+    lv_label_set_text(label1, "GROUP");
+    lv_obj_align(label1, cont, LV_ALIGN_IN_TOP_MID, 0, 0);
 
-    /*Create a list*/
-    list1 = lv_list_create(parent, NULL);
-    lv_obj_set_size(list1, 160, 128 - 16);
-    lv_obj_align(list1, NULL, LV_ALIGN_IN_TOP_MID, 0, 0);
+    lv_obj_t *img1 = lv_img_create(cont, NULL);
+    lv_img_set_src(img1, &group_20x20);
+    lv_obj_align(img1, cont, LV_ALIGN_CENTER, 0, 0);
+}
 
-    /*Add buttons to the list*/
-    list_btn1 = lv_list_add_btn(list1, LV_SYMBOL_VIDEO, "Anglog menu");
-    lv_obj_set_event_cb(list_btn1, list_event_handler);
+static member_create(lv_obj_t *parent)
+{
+    lv_obj_t *cont;
 
-    list_btn2 = lv_list_add_btn(list1, LV_SYMBOL_HOME, "Poc menu");
-    lv_obj_set_event_cb(list_btn2, list_event_handler);
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 80, 60);
+    lv_obj_align(cont, NULL, LV_ALIGN_CENTER, 0, 0);
+    // lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
 
-    list_btn3 = lv_list_add_btn(list1, LV_SYMBOL_CLOSE, "Mode Switch");
-    lv_obj_set_event_cb(list_btn3, list_event_handler);
+    lv_obj_t *label1 = lv_label_create(cont, NULL);
+    lv_label_set_text(label1, "MEMBER");
+    lv_obj_align(label1, cont, LV_ALIGN_IN_TOP_MID, 0, 0);
 
-    list_btn4 = lv_list_add_btn(list1, LV_SYMBOL_SETTINGS, "General settings");
-    lv_obj_set_event_cb(list_btn4, list_event_handler);
+    lv_obj_t *img1 = lv_img_create(cont, NULL);
+    lv_img_set_src(img1, &user_20x20);
+    lv_obj_align(img1, cont, LV_ALIGN_CENTER, 0, 0);
+}
 
-    bottom_bar(parent, list1);
+static friend_create(lv_obj_t *parent)
+{
+    lv_obj_t *cont;
+
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 80, 60);
+    lv_obj_align(cont, NULL, LV_ALIGN_CENTER, 0, 0);
+    // lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
+
+    lv_obj_t *label1 = lv_label_create(cont, NULL);
+    lv_label_set_text(label1, "FRIEND");
+    lv_obj_align(label1, cont, LV_ALIGN_IN_TOP_MID, 0, 0);
+
+    lv_obj_t *img1 = lv_img_create(cont, NULL);
+    lv_img_set_src(img1, &user_20x20);
+    lv_obj_align(img1, cont, LV_ALIGN_CENTER, 0, 0);
+}
+
+static gps_create(lv_obj_t *parent)
+{
+    lv_obj_t *cont;
+
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 80, 60);
+    lv_obj_align(cont, NULL, LV_ALIGN_CENTER, 0, 0);
+    // lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
+
+    lv_obj_t *label1 = lv_label_create(cont, NULL);
+    lv_label_set_text(label1, "GPS");
+    lv_obj_align(label1, cont, LV_ALIGN_IN_TOP_MID, 0, 0);
+
+    lv_obj_t *img1 = lv_img_create(cont, NULL);
+    lv_img_set_src(img1, &freq_20x20);
+    lv_obj_align(img1, cont, LV_ALIGN_CENTER, 0, 0);
+}
+
+static setting_create(lv_obj_t *parent)
+{
+    lv_obj_t *cont;
+
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 80, 60);
+    lv_obj_align(cont, NULL, LV_ALIGN_CENTER, 0, 0);
+    // lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
+
+    lv_obj_t *label1 = lv_label_create(cont, NULL);
+    lv_label_set_text(label1, "SETTING");
+    lv_obj_align(label1, cont, LV_ALIGN_IN_TOP_MID, 0, 0);
+
+    lv_obj_t *img1 = lv_img_create(cont, NULL);
+    lv_img_set_src(img1, &group_20x20);
+    lv_obj_align(img1, cont, LV_ALIGN_CENTER, 0, 0);
 }
 
 static lv_obj_t *list1;
@@ -201,4 +258,27 @@ static lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     lv_label_set_text(label, "Down");
 
     return cont;
+}
+
+void lv_menu(lv_obj_t *parent)
+{
+    lv_obj_t *cont = lv_cont_create(parent, NULL);
+    lv_obj_set_size(cont, 160, 128);
+
+    tv = lv_tabview_create(cont, NULL);
+    lv_obj_set_size(cont, 160, 128 - 16);
+    lv_tabview_set_btns_pos(tv, LV_TABVIEW_TAB_POS_LEFT);
+    t1 = lv_tabview_add_tab(tv, "1");
+    t2 = lv_tabview_add_tab(tv, "2");
+    t3 = lv_tabview_add_tab(tv, "3");
+    t4 = lv_tabview_add_tab(tv, "4");
+    t5 = lv_tabview_add_tab(tv, "5");
+
+    group_create(t1);
+    member_create(t2);
+    friend_create(t3);
+    gps_create(t4);
+    setting_create(t5);
+
+    bottom_bar(parent, list1);
 }

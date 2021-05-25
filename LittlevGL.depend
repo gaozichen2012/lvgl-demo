@@ -10084,7 +10084,7 @@
 1619838463 d:\3-repository\lvgl-demo\lv_drv_conf.h
 	"lv_conf.h"
 
-1619838463 d:\3-repository\lvgl-demo\lv_conf.h
+1621955744 d:\3-repository\lvgl-demo\lv_conf.h
 	<stdint.h>
 
 1619838463 d:\3-repository\lvgl-demo\lvgl\lvgl.h
@@ -11890,7 +11890,7 @@
 	"../lv_themes/lv_theme.h"
 	"../lv_core/lv_disp.h"
 
-1621764227 source:d:\3-repository\lvgl-demo\main.c
+1621953295 source:d:\3-repository\lvgl-demo\main.c
 	<stdlib.h>
 	<unistd.h>
 	"lvgl/lvgl.h"
@@ -11899,24 +11899,24 @@
 	"lv_tp79p/src/lv_startup.h"
 	<windows.h>
 
-1621757504 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
+1621953295 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
 	"../lv_tp79p.h"
 	"lv_desktop.h"
 
 1620033941 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_desktop.h
 
-1620039927 d:\3-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
+1621953295 d:\3-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
 	"lvgl.h"
 	"../lvgl/lvgl.h"
 	"lv_ex_conf.h"
 	"../lv_ex_conf.h"
+	<stdio.h>
 	"src/lv_startup.h"
-	"src/lv_event.h"
 	"src/lv_desktop.h"
 	"src/lv_menu.h"
 	"src/lv_menu_net.h"
 
-1620040044 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_startup.h
+1621953295 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_startup.h
 
 1620033524 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_event.h
 
@@ -11927,15 +11927,14 @@
 	"lv_event.h"
 	"lv_startup.h"
 
-1621757557 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
+1621953295 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
 	"../lv_tp79p.h"
 	"lv_startup.h"
 	"lv_desktop.h"
 	"lv_menu.h"
 	"lv_menu_net.h"
-	"lv_event.h"
 
-1621757574 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
+1621955604 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
 	"../lv_tp79p.h"
 	"lv_menu.h"
 
@@ -11988,4 +11987,18 @@
 1621934222 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\user_20x20.c
 	"lvgl.h"
 	"lvgl/lvgl.h"
+
+1621953295 source:d:\3-repository\lvgl-demo\lv_tp79p\assets\group_20x20.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1621953295 source:d:\3-repository\lvgl-demo\lv_tp79p\assets\user_20x20.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1621953295 source:d:\3-repository\lvgl-demo\lv_tp79p\src\lv_setting.c
+	"../lv_tp79p.h"
+	"lv_setting.h"
+
+1621953295 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_setting.h
 
