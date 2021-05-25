@@ -27,8 +27,8 @@ extern "C"
 #include "../lv_ex_conf.h"
 #endif
 
+#include <stdio.h>
 #include "src/lv_startup.h"
-#include "src/lv_event.h"
 #include "src/lv_desktop.h"
 #include "src/lv_menu.h"
 #include "src/lv_menu_net.h"

@@ -501,13 +501,16 @@
 		<Unit filename="lv_tp79p/assets/freq_20x20.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="lv_tp79p/assets/group_20x20.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_tp79p/assets/user_20x20.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lv_tp79p/src/lv_desktop.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lv_tp79p/src/lv_desktop.h" />
-		<Unit filename="lv_tp79p/src/lv_event.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="lv_tp79p/src/lv_event.h" />
 		<Unit filename="lv_tp79p/src/lv_menu.c">
 			<Option compilerVar="CC" />

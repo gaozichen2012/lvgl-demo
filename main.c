@@ -58,8 +58,8 @@ int main(int argc, char **argv)
 
     /*Run the v7 demo*/
     //lv_demo_widgets();
-    //lv_startup();
-    lv_demo_benchmark();
+    lv_startup();
+    //lv_demo_benchmark();
 
 #if WIN32
     while (!lv_win_exit_flag)

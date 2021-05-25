@@ -1,54 +1,10 @@
 #include "../lv_tp79p.h"
-#include "lv_menu.h"
-
-static lv_obj_t *tv;
-static lv_obj_t *t1;
-static lv_obj_t *t2;
-static lv_obj_t *t3;
-static lv_obj_t *t4;
-static lv_obj_t *t5;
-
-void lv_menu(lv_obj_t *parent)
-{
-    tv = lv_tabview_create(parent, NULL);
-
-    t1 = lv_tabview_add_tab(tv, "Group");
-    t2 = lv_tabview_add_tab(tv, "Member");
-    t3 = lv_tabview_add_tab(tv, "Friend");
-    t4 = lv_tabview_add_tab(tv, "GPS");
-    t5 = lv_tabview_add_tab(tv, "Setting");
-
-    group_create(t1);
-    member_create(t2);
-    friend_create(t3);
-    gps_create(t4);
-    setting_create(t5);
-
-    /*Create a list*/
-    list1 = lv_list_create(parent, NULL);
-    lv_obj_set_size(list1, 160, 128 - 16);
-    lv_obj_align(list1, NULL, LV_ALIGN_IN_TOP_MID, 0, 0);
-
-    /*Add buttons to the list*/
-    list_btn1 = lv_list_add_btn(list1, LV_SYMBOL_VIDEO, "Anglog menu");
-    lv_obj_set_event_cb(list_btn1, list_event_handler);
-
-    list_btn2 = lv_list_add_btn(list1, LV_SYMBOL_HOME, "Poc menu");
-    lv_obj_set_event_cb(list_btn2, list_event_handler);
-
-    list_btn3 = lv_list_add_btn(list1, LV_SYMBOL_CLOSE, "Mode Switch");
-    lv_obj_set_event_cb(list_btn3, list_event_handler);
-
-    list_btn4 = lv_list_add_btn(list1, LV_SYMBOL_SETTINGS, "General settings");
-    lv_obj_set_event_cb(list_btn4, list_event_handler);
-
-    bottom_bar(parent, list1);
-}
+#include "lv_setting.h"
 
 static lv_obj_t *list1;
 static lv_obj_t *list_btn1, *list_btn2, *list_btn3, *list_btn4;
 
-static unsigned char menu_sel = 0;
+static unsigned char setting_sel = 0;
 
 static void list_event_handler(lv_obj_t *obj, lv_event_t event)
 {
@@ -96,12 +52,12 @@ static void btn_up_event_cb(lv_obj_t *obj, lv_event_t event)
     {
         printf("Toggled\n");
 
-        if (menu_sel > 0)
+        if (setting_sel > 0)
         {
-            menu_sel--;
+            setting_sel--;
         }
 
-        switch (menu_sel)
+        switch (setting_sel)
         {
         case 0:
             lv_list_focus_btn(list1, list_btn1);
@@ -131,12 +87,12 @@ static void btn_down_event_cb(lv_obj_t *obj, lv_event_t event)
     {
         printf("Toggled\n");
 
-        if (menu_sel < 3)
+        if (setting_sel < 3)
         {
-            menu_sel++;
+            setting_sel++;
         }
 
-        switch (menu_sel)
+        switch (setting_sel)
         {
         case 0:
             lv_list_focus_btn(list1, list_btn1);
@@ -201,4 +157,27 @@ static lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     lv_label_set_text(label, "Down");
 
     return cont;
+}
+
+void lv_setting(lv_obj_t *parent)
+{
+    /*Create a list*/
+    list1 = lv_list_create(parent, NULL);
+    lv_obj_set_size(list1, 160, 128 - 16);
+    lv_obj_align(list1, NULL, LV_ALIGN_IN_TOP_MID, 0, 0);
+
+    /*Add buttons to the list*/
+    list_btn1 = lv_list_add_btn(list1, LV_SYMBOL_VIDEO, "Anglog setting");
+    lv_obj_set_event_cb(list_btn1, list_event_handler);
+
+    list_btn2 = lv_list_add_btn(list1, LV_SYMBOL_HOME, "Poc setting");
+    lv_obj_set_event_cb(list_btn2, list_event_handler);
+
+    list_btn3 = lv_list_add_btn(list1, LV_SYMBOL_CLOSE, "Mode Switch");
+    lv_obj_set_event_cb(list_btn3, list_event_handler);
+
+    list_btn4 = lv_list_add_btn(list1, LV_SYMBOL_SETTINGS, "General settings");
+    lv_obj_set_event_cb(list_btn4, list_event_handler);
+
+    bottom_bar(parent, list1);
 }

@@ -1,6 +1,8 @@
 #include "../lv_tp79p.h"
 #include "lv_desktop.h"
 
+LV_IMG_DECLARE(user_20x20);
+LV_IMG_DECLARE(group_20x20);
 LV_IMG_DECLARE(freq_20x20);
 
 static lv_obj_t *cont;
@@ -12,7 +14,35 @@ lv_obj_t *net_notification_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     cont = lv_cont_create(parent, NULL);
     lv_obj_set_size(cont, 160, 16);
     lv_obj_align(cont, obj_ref, LV_ALIGN_IN_TOP_MID, 0, 0);
-    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_notification");
+    //lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT,LV_SYMBOL_DOWNLOAD  LV_SYMBOL_HOME  LV_SYMBOL_SETTINGS  LV_SYMBOL_POWER  LV_SYMBOL_CLOSE LV_SYMBOL_OK LV_SYMBOL_LIST LV_SYMBOL_AUDIO LV_SYMBOL_VIDEO LV_SYMBOL_PLUS );
+
+    lv_obj_t *img1 = lv_img_create(cont, NULL);
+    lv_img_set_src(img1, LV_SYMBOL_SD_CARD);
+    lv_obj_align(img1, cont, LV_ALIGN_IN_TOP_LEFT, 5, 0);
+
+    lv_obj_t *img2 = lv_img_create(cont, NULL);
+    lv_img_set_src(img2, LV_SYMBOL_REFRESH);
+    lv_obj_align(img2, img1, LV_ALIGN_OUT_RIGHT_MID, 8, 0);
+
+    lv_obj_t *img3 = lv_img_create(cont, NULL);
+    lv_img_set_src(img3, LV_SYMBOL_BLUETOOTH);
+    lv_obj_align(img3, img2, LV_ALIGN_OUT_RIGHT_MID, 10, 0);
+
+    lv_obj_t *img4 = lv_img_create(cont, NULL);
+    lv_img_set_src(img4, LV_SYMBOL_WARNING);
+    lv_obj_align(img4, img3, LV_ALIGN_OUT_RIGHT_MID, 10, 0);
+
+    lv_obj_t *img5 = lv_img_create(cont, NULL);
+    lv_img_set_src(img5, LV_SYMBOL_USB);
+    lv_obj_align(img5, img4, LV_ALIGN_OUT_RIGHT_MID, 10, 0);
+
+    lv_obj_t *img6 = lv_img_create(cont, NULL);
+    lv_img_set_src(img6, LV_SYMBOL_WIFI);
+    lv_obj_align(img6, img5, LV_ALIGN_OUT_RIGHT_MID, 10, 0);
+
+    lv_obj_t *img7 = lv_img_create(cont, NULL);
+    lv_img_set_src(img7, LV_SYMBOL_BATTERY_3);
+    lv_obj_align(img7, img6, LV_ALIGN_OUT_RIGHT_MID, 10, 0);
     return cont;
 }
 
@@ -21,50 +51,23 @@ lv_obj_t *net_display_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     lv_obj_t *cont;
 
     cont = lv_cont_create(parent, NULL);
-    lv_obj_set_size(cont, 160, 40);
+    lv_obj_set_size(cont, 160, 128 - 16 - 16);
     lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
     // lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
 
     lv_obj_t *img1 = lv_img_create(cont, NULL);
-    lv_img_set_src(img1, LV_SYMBOL_PLUS "Tom 1");
-    lv_obj_align(img1, cont, LV_ALIGN_IN_TOP_LEFT, 20, 5);
+    lv_img_set_src(img1, &user_20x20);
+    lv_obj_align(img1, cont, LV_ALIGN_IN_TOP_LEFT, 15, 25);
+    lv_obj_t *label1 = lv_label_create(cont, NULL);
+    lv_label_set_text(label1, "TOM NAME"); //
+    lv_obj_align(label1, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 25 + 2);
 
     lv_obj_t *img2 = lv_img_create(cont, NULL);
-    lv_img_set_src(img2, LV_SYMBOL_HOME "Group 1");
-    lv_obj_align(img2, img1, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
-
-    return cont;
-}
-lv_obj_t *analog_notification_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
-{
-    lv_obj_t *cont;
-
-    cont = lv_cont_create(parent, NULL);
-    lv_obj_set_size(cont, 160, 16);
-    lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
-    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "analog_notification");
-    return cont;
-}
-
-lv_obj_t *analog_display_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
-{
-    lv_obj_t *cont;
-
-    cont = lv_cont_create(parent, NULL);
-    lv_obj_set_size(cont, 160, 40);
-    lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
-
-    lv_obj_t *img1 = lv_img_create(cont, NULL);
-    lv_img_set_src(img1, &freq_20x20);
-    lv_obj_align(img1, cont, LV_ALIGN_IN_LEFT_MID, 15, 0);
-
-    lv_obj_t *label1 = lv_label_create(cont, NULL);
-    lv_obj_align(label1, img1, LV_ALIGN_OUT_RIGHT_MID, 0, 0);
-    lv_label_set_text(label1, "432.12340");
-
+    lv_img_set_src(img2, &group_20x20);
+    lv_obj_align(img2, img1, LV_ALIGN_OUT_BOTTOM_MID, 0, 5);
     lv_obj_t *label2 = lv_label_create(cont, NULL);
-    lv_obj_align(label2, label1, LV_ALIGN_OUT_RIGHT_MID, 15, 0);
-    lv_label_set_text(label2, "CH001");
+    lv_label_set_text(label2, "TOM GROUP");
+    lv_obj_align(label2, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 25 + 2 + 20 + 5);
 
     return cont;
 }
@@ -105,21 +108,14 @@ static lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
 
 void lv_desktop(lv_obj_t *parent)
 {
-    lv_obj_t *cont_1, *cont_2, *cont_3, *cont_4, *cont_5;
+    lv_obj_t *cont_1, *cont_2, *cont_3;
 
     //创建一个容器对象
     cont = lv_cont_create(parent, NULL);
     lv_obj_set_size(cont, 160, 128);
-    // lv_obj_set_auto_realign(cont, true);                   /*Auto realign when the size changes*/
-    // lv_obj_align_origo(cont, NULL, LV_ALIGN_CENTER, 0, 0); /*This parametrs will be sued when realigned*/
-    // lv_cont_set_fit(cont, LV_FIT_TIGHT);
-    // lv_cont_set_layout(cont, LV_LAYOUT_COLUMN_MID);
 
     lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "Basics");
     cont_1 = net_notification_bar(cont, cont);
     cont_2 = net_display_bar(cont, cont_1);
-    cont_3 = analog_notification_bar(cont, cont_2);
-    cont_4 = analog_display_bar(cont, cont_3);
-
-    cont_5 = bottom_bar(cont, cont_4);
+    cont_3 = bottom_bar(cont, cont_2);
 }

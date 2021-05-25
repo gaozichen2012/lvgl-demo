@@ -4,7 +4,6 @@
 #include "lv_desktop.h"
 #include "lv_menu.h"
 #include "lv_menu_net.h"
-#include "lv_event.h"
 
 lv_obj_t *desktop_src;
 lv_obj_t *menu_src;
