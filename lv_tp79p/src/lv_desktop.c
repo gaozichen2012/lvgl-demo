@@ -6,6 +6,7 @@ LV_IMG_DECLARE(group_20x20);
 LV_IMG_DECLARE(freq_20x20);
 
 static lv_group_t *g;
+lv_obj_t *desktop_cont;
 
 static void event_handler(lv_obj_t *obj, lv_event_t event)
 {
@@ -59,13 +60,38 @@ lv_obj_t *net_notification_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     lv_obj_align(img7, img6, LV_ALIGN_OUT_RIGHT_MID, 10, 0);
     return cont;
 }
+#ifndef EC20
+static void sim_event_ok_handler(lv_obj_t *obj, lv_event_t event)
+{
+    printf("event_handler: %d\n", event);
 
-static lv_obj_t *central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
+    if (event == LV_EVENT_VALUE_CHANGED)
+    {
+        lv_event_send(desktop_cont, LV_EVENT_CLICKED, NULL);
+    }
+}
+#endif
+
+static void bottom_bar(lv_obj_t *parent)
+{
+    lv_obj_t *btn = lv_btn_create(parent, NULL);
+#ifndef EC20
+    lv_obj_set_event_cb(btn, sim_event_ok_handler);
+#endif
+    lv_obj_set_size(btn, 40, 20);
+    lv_obj_align(btn, parent, LV_ALIGN_IN_BOTTOM_LEFT, 5, -5);
+    lv_btn_set_checkable(btn, true);
+    lv_btn_toggle(btn);
+    lv_obj_t *label = lv_label_create(btn, NULL);
+    lv_label_set_text(label, "Menu");
+}
+
+static void central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
     lv_obj_t *cont;
 
     cont = lv_cont_create(parent, NULL);
-    lv_obj_set_size(cont, 160, 128 - 16 - 16);
+    lv_obj_set_size(cont, 160, 128 - 16);
     lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
     // lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "net_display");
 
@@ -83,41 +109,21 @@ static lv_obj_t *central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
     lv_label_set_text(label2, "TOM GROUP");
     lv_obj_align(label2, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 25 + 2 + 20 + 5);
 
-    return cont;
-}
-
-static lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
-{
-    lv_obj_t *cont;
-
-    cont = lv_cont_create(parent, NULL);
-    lv_obj_set_size(cont, 160, 16);
-    lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
-
-    lv_obj_t *btn = lv_btn_create(cont, NULL);
-    lv_obj_set_size(btn, 32, 16);
-    lv_obj_align(btn, cont, LV_ALIGN_IN_LEFT_MID, 0, 0);
-    lv_btn_set_checkable(btn, true);
-    lv_btn_toggle(btn);
-    lv_obj_t *label = lv_label_create(btn, NULL);
-    lv_label_set_text(label, "Menu");
-
-    return cont;
+    bottom_bar(cont);
 }
 
 void lv_desktop(lv_obj_t *parent)
 {
-    lv_obj_t *cont = lv_cont_create(parent, NULL);
-    lv_obj_set_event_cb(cont, event_handler);
-    lv_obj_set_size(cont, 160, 128);
+    desktop_cont = lv_cont_create(parent, NULL);
+    lv_obj_set_event_cb(desktop_cont, event_handler);
+    lv_obj_set_size(desktop_cont, 160, 128);
 
-    lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "Basics");
-    lv_obj_t *cont_1 = net_notification_bar(cont, cont);
-    lv_obj_t *cont_2 = central_area(cont, cont_1);
-    lv_obj_t *cont_3 = bottom_bar(cont, cont_2);
+    lv_obj_set_style_local_value_str(desktop_cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "Basics");
+    lv_obj_t *cont_1 = net_notification_bar(desktop_cont, desktop_cont);
+    central_area(desktop_cont, cont_1);
 
     g = lv_group_create();
-    lv_group_add_obj(g, cont);
+    lv_group_add_obj(g, desktop_cont);
 #ifdef EC20
     lv_indev_set_group(indev_keypad, g);
 #endif
