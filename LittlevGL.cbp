@@ -504,6 +504,9 @@
 		<Unit filename="lv_tp79p/assets/group_20x20.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="lv_tp79p/assets/group_80x80.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lv_tp79p/assets/user_20x20.c">
 			<Option compilerVar="CC" />
 		</Unit>

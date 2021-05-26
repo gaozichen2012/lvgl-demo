@@ -33,6 +33,12 @@ extern "C"
 #include "src/lv_menu.h"
 #include "src/lv_setting.h"
 #include "src/lv_blight.h"
+
+//#define EC20
+#ifdef EC20
+#include "lvgl_indev.h"
+#endif
+
 /*********************
  *      DEFINES
  *********************/
@@ -41,15 +47,15 @@ extern "C"
 #error "lv_examples: Wrong lvgl version"
 #endif
 
-   /**********************
+  /**********************
  *      TYPEDEFS
  **********************/
 
-   /**********************
+  /**********************
  * GLOBAL PROTOTYPES
  **********************/
 
-   /**********************
+  /**********************
  *      MACROS
  **********************/
 

@@ -5,8 +5,6 @@ LV_IMG_DECLARE(user_20x20);
 LV_IMG_DECLARE(group_20x20);
 LV_IMG_DECLARE(freq_20x20);
 
-#include "lvgl_indev.h"
-
 static lv_group_t *g;
 
 static void event_handler(lv_obj_t *obj, lv_event_t event)
@@ -43,8 +41,9 @@ static lv_obj_t *central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
 
     g = lv_group_create();
     lv_group_add_obj(g, sw);
+#ifdef EC20
     lv_indev_set_group(indev_keypad, g);
-
+#endif
     return cont;
 }
 

@@ -1,8 +1,6 @@
 #include "../lv_tp79p.h"
 #include "lv_setting.h"
 
-#include "lvgl_indev.h"
-
 LV_IMG_DECLARE(user_20x20);
 LV_IMG_DECLARE(group_20x20);
 LV_IMG_DECLARE(freq_20x20);
@@ -117,5 +115,7 @@ void lv_setting(lv_obj_t *parent)
 
     g = lv_group_create();
     lv_group_add_obj(g, list1);
+#ifdef EC20
     lv_indev_set_group(indev_keypad, g);
+#endif
 }
