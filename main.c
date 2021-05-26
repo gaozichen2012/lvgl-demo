@@ -60,6 +60,7 @@ int main(int argc, char **argv)
     //lv_demo_widgets();
     lv_startup();
     //lv_demo_benchmark();
+    //lv_demo_keypad_encoder();
 
 #if WIN32
     while (!lv_win_exit_flag)

@@ -1,17 +1,33 @@
 #include "../lv_tp79p.h"
 #include "lv_desktop.h"
 
+#include "lvgl_indev.h"
+
 LV_IMG_DECLARE(user_20x20);
 LV_IMG_DECLARE(group_20x20);
 LV_IMG_DECLARE(freq_20x20);
 
-static lv_obj_t *cont;
+static lv_group_t *g;
+
+static void event_handler(lv_obj_t *obj, lv_event_t event)
+{
+    printf("event_handler: %d\n", event);
+
+    switch (event)
+    {
+    case LV_EVENT_CLICKED: //LV_KEY_ENTER
+        page_switch(PAGE_MENU);
+        break;
+    case LV_EVENT_CANCEL: //LV_KEY_ESC
+        break;
+    default:
+        break;
+    }
+}
 
 lv_obj_t *net_notification_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
-    lv_obj_t *cont;
-
-    cont = lv_cont_create(parent, NULL);
+    lv_obj_t *cont = lv_cont_create(parent, NULL);
     lv_obj_set_size(cont, 160, 16);
     lv_obj_align(cont, obj_ref, LV_ALIGN_IN_TOP_MID, 0, 0);
     //lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT,LV_SYMBOL_DOWNLOAD  LV_SYMBOL_HOME  LV_SYMBOL_SETTINGS  LV_SYMBOL_POWER  LV_SYMBOL_CLOSE LV_SYMBOL_OK LV_SYMBOL_LIST LV_SYMBOL_AUDIO LV_SYMBOL_VIDEO LV_SYMBOL_PLUS );
@@ -46,7 +62,7 @@ lv_obj_t *net_notification_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     return cont;
 }
 
-lv_obj_t *net_display_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
+static lv_obj_t *central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
     lv_obj_t *cont;
 
@@ -72,20 +88,6 @@ lv_obj_t *net_display_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     return cont;
 }
 
-static void btn_ok_event_cb(lv_obj_t *obj, lv_event_t event)
-{
-    if (event == LV_EVENT_CLICKED)
-    {
-        printf("Clicked\n");
-    }
-    else if (event == LV_EVENT_VALUE_CHANGED)
-    {
-        printf("Toggled\n");
-
-        page_switch(1);
-    }
-}
-
 static lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
     lv_obj_t *cont;
@@ -95,7 +97,6 @@ static lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
     lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
 
     lv_obj_t *btn = lv_btn_create(cont, NULL);
-    lv_obj_set_event_cb(btn, btn_ok_event_cb);
     lv_obj_set_size(btn, 32, 16);
     lv_obj_align(btn, cont, LV_ALIGN_IN_LEFT_MID, 0, 0);
     lv_btn_set_checkable(btn, true);
@@ -108,14 +109,16 @@ static lv_obj_t *bottom_bar(lv_obj_t *parent, lv_obj_t *obj_ref)
 
 void lv_desktop(lv_obj_t *parent)
 {
-    lv_obj_t *cont_1, *cont_2, *cont_3;
-
-    //创建一个容器对象
-    cont = lv_cont_create(parent, NULL);
+    lv_obj_t *cont = lv_cont_create(parent, NULL);
+    lv_obj_set_event_cb(cont, event_handler);
     lv_obj_set_size(cont, 160, 128);
 
     lv_obj_set_style_local_value_str(cont, LV_CONT_PART_MAIN, LV_STATE_DEFAULT, "Basics");
-    cont_1 = net_notification_bar(cont, cont);
-    cont_2 = net_display_bar(cont, cont_1);
-    cont_3 = bottom_bar(cont, cont_2);
+    lv_obj_t *cont_1 = net_notification_bar(cont, cont);
+    lv_obj_t *cont_2 = central_area(cont, cont_1);
+    lv_obj_t *cont_3 = bottom_bar(cont, cont_2);
+
+    g = lv_group_create();
+    lv_group_add_obj(g, cont);
+    lv_indev_set_group(indev_keypad, g);
 }

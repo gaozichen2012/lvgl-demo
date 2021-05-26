@@ -507,6 +507,9 @@
 		<Unit filename="lv_tp79p/assets/user_20x20.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="lv_tp79p/src/lv_blight.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lv_tp79p/src/lv_desktop.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -516,9 +519,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lv_tp79p/src/lv_menu.h" />
-		<Unit filename="lv_tp79p/src/lv_menu_net.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="lv_tp79p/src/lv_menu_net.h" />
 		<Unit filename="lv_tp79p/src/lv_setting.c">
 			<Option compilerVar="CC" />

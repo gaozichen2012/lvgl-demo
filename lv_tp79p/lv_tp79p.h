@@ -31,7 +31,8 @@ extern "C"
 #include "src/lv_startup.h"
 #include "src/lv_desktop.h"
 #include "src/lv_menu.h"
-#include "src/lv_menu_net.h"
+#include "src/lv_setting.h"
+#include "src/lv_blight.h"
 /*********************
  *      DEFINES
  *********************/

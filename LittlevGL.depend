@@ -8225,7 +8225,7 @@
 	"lvgl.h"
 	"lvgl/lvgl.h"
 
-1619768436 f:\0-repository\lvgl-demo\lv_drv_conf.h
+1621998867 f:\0-repository\lvgl-demo\lv_drv_conf.h
 	"lv_conf.h"
 
 1619763407 f:\0-repository\lvgl-demo\lv_conf.h
@@ -8950,7 +8950,7 @@
 	"src/lv_demo_keypad_encoder/lv_demo_keypad_encoder.h"
 	"src/lv_demo_printer/lv_demo_printer.h"
 
-1621826652 f:\0-repository\lvgl-demo\lv_ex_conf.h
+1622016412 f:\0-repository\lvgl-demo\lv_ex_conf.h
 
 1619763462 f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_get_started\lv_ex_get_started.h
 
@@ -10034,7 +10034,7 @@
 	"../lv_themes/lv_theme.h"
 	"../lv_core/lv_disp.h"
 
-1621928145 source:f:\0-repository\lvgl-demo\main.c
+1622016424 source:f:\0-repository\lvgl-demo\main.c
 	<stdlib.h>
 	<unistd.h>
 	"lvgl/lvgl.h"
@@ -10043,13 +10043,13 @@
 	"lv_tp79p/src/lv_startup.h"
 	<windows.h>
 
-1621935988 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
+1622029852 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
 	"../lv_tp79p.h"
 	"lv_desktop.h"
 
 1620899702 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.h
 
-1621937031 f:\0-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
+1622018722 f:\0-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
 	"lvgl.h"
 	"../lvgl/lvgl.h"
 	"lv_ex_conf.h"
@@ -10058,7 +10058,8 @@
 	"src/lv_startup.h"
 	"src/lv_desktop.h"
 	"src/lv_menu.h"
-	"src/lv_menu_net.h"
+	"src/lv_setting.h"
+	"src/lv_blight.h"
 
 1619838463 source:d:\3-repository\lvgl-demo\lv_drivers\display\fbdev.c
 	"fbdev.h"
@@ -11952,7 +11953,7 @@
 	"lvgl.h"
 	"lvgl/lvgl.h"
 
-1621936108 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_startup.h
+1622017561 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_startup.h
 
 1620899702 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_event.h
 
@@ -11965,20 +11966,21 @@
 	"lv_event.h"
 	"lv_startup.h"
 
-1621826652 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
+1622030153 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
 	"../lv_tp79p.h"
 	"lv_menu.h"
 
-1621826652 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu_net.c
+1622016579 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu_net.c
 	"../lv_tp79p.h"
 	"lv_menu_net.h"
 
-1621936168 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
+1622025302 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
 	"../lv_tp79p.h"
 	"lv_startup.h"
 	"lv_desktop.h"
 	"lv_menu.h"
-	"lv_menu_net.h"
+	"lv_setting.h"
+	"lv_blight.h"
 
 1621934199 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\group_20x20.c
 	"lvgl.h"
@@ -12001,4 +12003,20 @@
 	"lv_setting.h"
 
 1621953295 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_setting.h
+
+1622030156 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_setting.c
+	"../lv_tp79p.h"
+	"lv_setting.h"
+
+1621947090 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_setting.h
+
+1622018361 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_blight.h
+
+1622030230 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_blight.c
+	"../lv_tp79p.h"
+	"lv_blight.h"
+
+1622029339 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\group_80x80.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
 
