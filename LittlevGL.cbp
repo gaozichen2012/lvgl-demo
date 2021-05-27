@@ -115,33 +115,6 @@
 		<Unit filename="lv_drivers/win_drv.h" />
 		<Unit filename="lv_drv_conf.h" />
 		<Unit filename="lv_ex_conf.h" />
-		<Unit filename="lv_examples/assets/img_cogwheel_alpha16.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lv_examples/assets/img_cogwheel_argb.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lv_examples/assets/img_cogwheel_chroma_keyed.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lv_examples/assets/img_cogwheel_indexed16.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lv_examples/assets/img_cogwheel_rgb.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lv_examples/assets/img_hand.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lv_examples/assets/lv_font_montserrat_12_compr_az.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lv_examples/assets/lv_font_montserrat_16_compr_az.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lv_examples/assets/lv_font_montserrat_28_compr_az.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="lv_examples/lv_apps/benchmark/benchmark.h" />
 		<Unit filename="lv_examples/lv_apps/demo/demo.h" />
 		<Unit filename="lv_examples/lv_apps/sysmon/sysmon.h" />
@@ -197,6 +170,33 @@
 		<Unit filename="lv_examples/lv_tutorial/7_fonts/lv_tutorial_fonts.h" />
 		<Unit filename="lv_examples/lv_tutorial/8_animations/lv_tutorial_animations.h" />
 		<Unit filename="lv_examples/lv_tutorial/9_responsive/lv_tutorial_responsive.h" />
+		<Unit filename="lv_examples/src/assets/img_cogwheel_alpha16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_examples/src/assets/img_cogwheel_argb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_examples/src/assets/img_cogwheel_chroma_keyed.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_examples/src/assets/img_cogwheel_indexed16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_examples/src/assets/img_cogwheel_rgb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_examples/src/assets/img_hand.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_examples/src/assets/lv_font_montserrat_12_compr_az.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_examples/src/assets/lv_font_montserrat_16_compr_az.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_examples/src/assets/lv_font_montserrat_28_compr_az.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lv_examples/src/lv_demo_benchmark/lv_demo_benchmark.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -478,9 +478,6 @@
 		<Unit filename="lv_examples/src/lv_ex_widgets/lv_ex_tabview/lv_ex_tabview_1.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="lv_examples/src/lv_ex_widgets/lv_ex_templ.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="lv_examples/src/lv_ex_widgets/lv_ex_textarea/lv_ex_textarea_1.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -498,6 +495,12 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lv_examples/src/lv_examples.h" />
+		<Unit filename="lv_tp79p/assets/NotoSansSC_Regular_bpp2_12.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lv_tp79p/assets/NotoSansSC_Regular_bpp2_16.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lv_tp79p/assets/freq_20x20.c">
 			<Option compilerVar="CC" />
 		</Unit>
