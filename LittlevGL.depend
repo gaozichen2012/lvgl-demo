@@ -8228,10 +8228,10 @@
 1621998867 f:\0-repository\lvgl-demo\lv_drv_conf.h
 	"lv_conf.h"
 
-1619763407 f:\0-repository\lvgl-demo\lv_conf.h
+1622082317 f:\0-repository\lvgl-demo\lv_conf.h
 	<stdint.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\lvgl.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\lvgl.h
 	"src/lv_misc/lv_log.h"
 	"src/lv_misc/lv_task.h"
 	"src/lv_misc/lv_math.h"
@@ -8283,24 +8283,25 @@
 	"src/lv_draw/lv_img_cache.h"
 	"src/lv_api_map.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_log.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_log.h
 	"../lv_conf_internal.h"
 	<stdint.h>
 
-1621425965 f:\0-repository\lvgl-demo\lvgl\src\lv_conf_internal.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_conf_internal.h
 	<stdint.h>
+	"lv_conf_kconfig.h"
 	"lv_conf.h"
 	"../../lv_conf.h"
 	<stdint.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_task.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_task.h
 	"../lv_conf_internal.h"
 	<stdint.h>
 	<stdbool.h>
 	"lv_mem.h"
 	"lv_ll.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_mem.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_mem.h
 	"../lv_conf_internal.h"
 	<stdint.h>
 	<stddef.h>
@@ -8308,29 +8309,29 @@
 	"lv_types.h"
 	<string.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_types.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_types.h
 	<stdint.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_ll.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_ll.h
 	"lv_mem.h"
 	<stdint.h>
 	<stddef.h>
 	<stdbool.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_math.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_math.h
 	"../lv_conf_internal.h"
 	<stdint.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_async.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_async.h
 	"lv_task.h"
 	"lv_types.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal.h
 	"lv_hal_disp.h"
 	"lv_hal_indev.h"
 	"lv_hal_tick.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_disp.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_disp.h
 	<stdint.h>
 	<stdbool.h>
 	"lv_hal.h"
@@ -8339,31 +8340,32 @@
 	"../lv_misc/lv_ll.h"
 	"../lv_misc/lv_task.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_color.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_color.h
 	"../lv_conf_internal.h"
 	"lv_math.h"
+	"lv_types.h"
 	<stdint.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_area.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_area.h
 	"../lv_conf_internal.h"
 	<string.h>
 	<stdbool.h>
 	<stdint.h>
 	"lv_mem.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_indev.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_indev.h
 	"../lv_conf_internal.h"
 	<stdbool.h>
 	<stdint.h>
 	"../lv_misc/lv_area.h"
 	"../lv_misc/lv_task.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_tick.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_tick.h
 	"../lv_conf_internal.h"
 	<stdint.h>
 	<stdbool.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_obj.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_obj.h
 	"../lv_conf_internal.h"
 	<stddef.h>
 	<stdbool.h>
@@ -8379,7 +8381,7 @@
 	"../lv_draw/lv_draw_img.h"
 	"lv_obj_style_dec.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_style.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_style.h
 	<stdbool.h>
 	"../lv_font/lv_font.h"
 	"../lv_misc/lv_color.h"
@@ -8389,7 +8391,7 @@
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw_blend.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font.h
 	"../lv_conf_internal.h"
 	<stdint.h>
 	<stddef.h>
@@ -8397,96 +8399,98 @@
 	"lv_symbol_def.h"
 	"../lv_misc/lv_area.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_symbol_def.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_symbol_def.h
 	"../lv_conf_internal.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_anim.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_anim.h
 	"../lv_conf_internal.h"
 	<stdint.h>
 	<stdbool.h>
 	<string.h>
 	"lv_mem.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_debug.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_debug.h
 	"../lv_conf_internal.h"
 	<stdbool.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_blend.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_blend.h
 	"../lv_misc/lv_color.h"
 	"../lv_misc/lv_area.h"
 	"lv_draw_mask.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_mask.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_mask.h
 	<stdbool.h>
 	"../lv_misc/lv_area.h"
 	"../lv_misc/lv_color.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_rect.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_rect.h
 	"../lv_core/lv_style.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_label.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_label.h
 	"../lv_misc/lv_bidi.h"
 	"../lv_misc/lv_txt.h"
 	"../lv_core/lv_style.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_bidi.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_bidi.h
 	"../lv_conf_internal.h"
 	<stdbool.h>
 	<stdint.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_txt.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_txt.h
 	"../lv_conf_internal.h"
 	<stdbool.h>
-	"lv_area.h"
+	<stdarg.h>
 	"lv_area.h"
 	"../lv_font/lv_font.h"
+	"lv_printf.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_line.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_line.h
 	"../lv_core/lv_style.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_img.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_img.h
 	"lv_img_decoder.h"
 	"lv_img_buf.h"
+	"../lv_core/lv_style.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_decoder.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_decoder.h
 	"../lv_conf_internal.h"
 	<stdint.h>
 	"lv_img_buf.h"
 	"../lv_misc/lv_fs.h"
 	"../lv_misc/lv_types.h"
 	"../lv_misc/lv_area.h"
-	"../lv_core/lv_style.h"
+	"../lv_misc/lv_color.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_buf.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_buf.h
 	<stdbool.h>
 	"../lv_misc/lv_color.h"
 	"../lv_misc/lv_area.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_fs.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_fs.h
 	"../lv_conf_internal.h"
 	<stdint.h>
 	<stdbool.h>
 	"lv_mem.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_obj_style_dec.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_obj_style_dec.h
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_group.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_group.h
 	"lv_obj.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_indev.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_indev.h
 	"lv_obj.h"
 	"../lv_hal/lv_hal_indev.h"
 	"../lv_core/lv_group.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_refr.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_refr.h
 	"lv_obj.h"
 	<stdbool.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_disp.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_disp.h
 	"../lv_hal/lv_hal.h"
 	"lv_obj.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_style.h"
 	"../lv_core/lv_obj.h"
@@ -8495,54 +8499,54 @@
 	"lv_theme_material.h"
 	"lv_theme_mono.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_empty.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_empty.h
 	"../lv_conf_internal.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_template.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_template.h
 	"../lv_conf_internal.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_material.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_material.h
 	"../lv_conf_internal.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_mono.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_mono.h
 	"../lv_conf_internal.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_loader.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_loader.h
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_fmt_txt.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_fmt_txt.h
 	<stdint.h>
 	<stddef.h>
 	<stdbool.h>
 	"lv_font.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_printf.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_printf.h
 	"../lv_conf_internal.h"
 	<stdarg.h>
 	<stddef.h>
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_btn.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_btn.h
 	"../lv_conf_internal.h"
 	"lv_cont.h"
 	"../lv_core/lv_indev.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_cont.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_cont.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_imgbtn.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_imgbtn.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_btn.h"
 	"../lv_draw/lv_draw_img.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_img.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_img.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"../lv_misc/lv_fs.h"
 	"lv_label.h"
 	"../lv_draw/lv_draw.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_label.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_label.h
 	"../lv_conf_internal.h"
 	<stdarg.h>
 	"../lv_core/lv_obj.h"
@@ -8551,7 +8555,7 @@
 	"../lv_misc/lv_txt.h"
 	"../lv_draw/lv_draw.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_style.h"
 	"../lv_misc/lv_txt.h"
@@ -8565,23 +8569,23 @@
 	"lv_draw_blend.h"
 	"lv_draw_mask.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_triangle.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_triangle.h
 	"lv_draw_rect.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_arc.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_arc.h
 	"lv_draw_line.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_line.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_line.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_page.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_page.h
 	"../lv_conf_internal.h"
 	"lv_cont.h"
 	"../lv_core/lv_indev.h"
 	"../lv_misc/lv_anim.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_list.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_list.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_page.h"
@@ -8589,27 +8593,27 @@
 	"lv_label.h"
 	"lv_img.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_chart.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_chart.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_line.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_table.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_table.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_label.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_checkbox.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_checkbox.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_btn.h"
 	"lv_label.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_cpicker.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_cpicker.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_bar.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_bar.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"../lv_misc/lv_anim.h"
@@ -8617,50 +8621,50 @@
 	"lv_btn.h"
 	"lv_label.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_slider.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_slider.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_bar.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_led.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_led.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_btnmatrix.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_btnmatrix.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_label.h"
 	"lv_btn.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_keyboard.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_keyboard.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_btnmatrix.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_dropdown.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_dropdown.h
 	"../lv_conf_internal.h"
 	"../lv_widgets/lv_page.h"
 	"../lv_widgets/lv_label.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_roller.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_roller.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_page.h"
 	"lv_label.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_textarea.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_textarea.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_page.h"
 	"lv_label.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_canvas.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_canvas.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"../lv_widgets/lv_img.h"
 	"../lv_draw/lv_draw_img.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_win.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_win.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_cont.h"
@@ -8669,67 +8673,67 @@
 	"lv_img.h"
 	"lv_page.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_tabview.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_tabview.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"../lv_widgets/lv_win.h"
 	"../lv_widgets/lv_page.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_tileview.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_tileview.h
 	"../lv_conf_internal.h"
 	"../lv_widgets/lv_page.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_msgbox.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_msgbox.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_cont.h"
 	"lv_btnmatrix.h"
 	"lv_label.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_objmask.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_objmask.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"../lv_widgets/lv_cont.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_gauge.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_gauge.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_linemeter.h"
 	"lv_label.h"
 	"lv_line.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_linemeter.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_linemeter.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_switch.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_switch.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"lv_bar.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_arc.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_arc.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_spinner.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_spinner.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"../lv_misc/lv_anim.h"
 	"lv_arc.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_calendar.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_calendar.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_spinbox.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_spinbox.h
 	"../lv_conf_internal.h"
 	"../lv_core/lv_obj.h"
 	"../lv_widgets/lv_textarea.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_cache.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_cache.h
 	"lv_img_decoder.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_api_map.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_api_map.h
 	"../lvgl.h"
 
 1619763459 source:f:\0-repository\lvgl-demo\lv_drivers\display\ili9341.c
@@ -8936,7 +8940,7 @@
 1619763461 source:f:\0-repository\lvgl-demo\lv_examples\assets\img_cogwheel_alpha16.c
 	"../lv_examples.h"
 
-1619763461 f:\0-repository\lvgl-demo\lv_examples\lv_examples.h
+1615854790 f:\0-repository\lvgl-demo\lv_examples\lv_examples.h
 	"lvgl.h"
 	"../lvgl/lvgl.h"
 	"lv_ex_conf.h"
@@ -8949,24 +8953,25 @@
 	"src/lv_demo_stress/lv_demo_stress.h"
 	"src/lv_demo_keypad_encoder/lv_demo_keypad_encoder.h"
 	"src/lv_demo_printer/lv_demo_printer.h"
+	"src/lv_demo_music/lv_demo_music.h"
 
-1622016412 f:\0-repository\lvgl-demo\lv_ex_conf.h
+1622082111 f:\0-repository\lvgl-demo\lv_ex_conf.h
 
-1619763462 f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_get_started\lv_ex_get_started.h
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_get_started\lv_ex_get_started.h
 
-1619763462 f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style.h
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style.h
 
-1619763462 f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_widgets.h
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_widgets.h
 
-1619763462 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_widgets\lv_demo_widgets.h
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_widgets\lv_demo_widgets.h
 
-1619763461 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_benchmark\lv_demo_benchmark.h
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_benchmark\lv_demo_benchmark.h
 
-1619763462 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_stress\lv_demo_stress.h
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_stress\lv_demo_stress.h
 
-1619763461 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_keypad_encoder\lv_demo_keypad_encoder.h
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_keypad_encoder\lv_demo_keypad_encoder.h
 
-1619763462 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\lv_demo_printer.h
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\lv_demo_printer.h
 	"../../lv_examples.h"
 
 1619763461 source:f:\0-repository\lvgl-demo\lv_examples\assets\img_cogwheel_argb.c
@@ -8993,321 +8998,319 @@
 1619763461 source:f:\0-repository\lvgl-demo\lv_examples\assets\lv_font_montserrat_28_compr_az.c
 	"../lv_examples.h"
 
-1619763461 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_benchmark\lv_demo_benchmark.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_benchmark\lv_demo_benchmark.c
 	"../../lv_examples.h"
 	"lv_demo_benchmark.h"
 
-1619763461 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_keypad_encoder\lv_demo_keypad_encoder.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_keypad_encoder\lv_demo_keypad_encoder.c
 	"../../lv_examples.h"
 	"lv_demo_keypad_encoder.h"
-	"lv_drivers/indev/keyboard.h"
-	"lv_drivers/indev/mousewheel.h"
 
-1619763461 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_bright.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_bright.c
 	"../../../lv_examples.h"
 
-1619763461 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_eco.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_eco.c
 	"../../../lv_examples.h"
 
-1619763461 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_hue.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_hue.c
 	"../../../lv_examples.h"
 
-1619763461 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_pc.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_pc.c
 	"../../../lv_examples.h"
 
-1619763461 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_tel.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_tel.c
 	"../../../lv_examples.h"
 
-1619763461 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_wifi.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_icon_wifi.c
 	"../../../lv_examples.h"
 
-1619763461 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_btn_bg_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_btn_bg_1.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_btn_bg_2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_btn_bg_2.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_btn_bg_3.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_btn_bg_3.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_btn_bg_4.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_btn_bg_4.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_cloud.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_cloud.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_copy.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_copy.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_internet.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_internet.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_mobile.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_mobile.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_no_internet.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_no_internet.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_phone.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_phone.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_print.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_print.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_printer2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_printer2.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_ready.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_ready.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_scan.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_scan.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_scan_example.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_scan_example.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_setup.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_setup.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_usb.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_usb.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_wave.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\images\lv_demo_printer_img_wave.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\lv_demo_printer.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\lv_demo_printer.c
 	"lv_demo_printer_theme.h"
 
-1619763462 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\lv_demo_printer_theme.h
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\lv_demo_printer_theme.h
 	"lv_demo_printer.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\lv_demo_printer_theme.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_printer\lv_demo_printer_theme.c
 	"lv_demo_printer.h"
 	"lv_demo_printer_theme.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_stress\lv_demo_stress.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_stress\lv_demo_stress.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_widgets\lv_demo_widgets.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_widgets\lv_demo_widgets.c
 	"../../lv_examples.h"
 	"lv_demo_widgets.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_get_started\lv_ex_get_started_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_get_started\lv_ex_get_started_1.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_get_started\lv_ex_get_started_2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_get_started\lv_ex_get_started_2.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_get_started\lv_ex_get_started_3.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_get_started\lv_ex_get_started_3.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_1.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_10.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_10.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_11.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_11.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_2.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_3.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_3.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_4.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_4.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_5.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_5.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_6.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_6.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_7.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_7.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_8.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_8.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_9.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_style\lv_ex_style_9.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_arc\lv_ex_arc_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_arc\lv_ex_arc_1.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_arc\lv_ex_arc_2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_arc\lv_ex_arc_2.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_bar\lv_ex_bar_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_bar\lv_ex_bar_1.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_btn\lv_ex_btn_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_btn\lv_ex_btn_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_btn\lv_ex_btn_2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_btn\lv_ex_btn_2.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_btnmatrix\lv_ex_btnmatrix_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_btnmatrix\lv_ex_btnmatrix_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_calendar\lv_ex_calendar_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_calendar\lv_ex_calendar_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_canvas\lv_ex_canvas_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_canvas\lv_ex_canvas_1.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_canvas\lv_ex_canvas_2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_canvas\lv_ex_canvas_2.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_chart\lv_ex_chart_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_chart\lv_ex_chart_1.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_chart\lv_ex_chart_2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_chart\lv_ex_chart_2.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_checkbox\lv_ex_checkbox_1.c
-	"../../../lv_examples.h"
-	<stdio.h>
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_cont\lv_ex_cont_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_cpicker\lv_ex_cpicker_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_cpicker\lv_ex_cpicker_2.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_dropdown\lv_ex_dropdown_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_checkbox\lv_ex_checkbox_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_dropdown\lv_ex_dropdown_2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_cont\lv_ex_cont_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_cpicker\lv_ex_cpicker_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_cpicker\lv_ex_cpicker_2.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_dropdown\lv_ex_dropdown_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_gauge\lv_ex_gauge_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_gauge\lv_ex_gauge_2.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_img\lv_ex_img_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_img\lv_ex_img_2.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_img\lv_ex_img_3.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_imgbtn\imgbtn_blue.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_imgbtn\imgbtn_green.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_imgbtn\lv_ex_imgbtn_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_keyboard\lv_ex_keyboard_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_label\lv_ex_label_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_label\lv_ex_label_2.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_label\lv_ex_label_3.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_led\lv_ex_led_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_line\lv_ex_line_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_linemeter\lv_ex_linemeter_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_list\lv_ex_list_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_dropdown\lv_ex_dropdown_2.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_msgbox\lv_ex_msgbox_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_gauge\lv_ex_gauge_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_gauge\lv_ex_gauge_2.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_img\lv_ex_img_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_img\lv_ex_img_2.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_img\lv_ex_img_3.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_imgbtn\imgbtn_blue.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_imgbtn\imgbtn_green.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_imgbtn\lv_ex_imgbtn_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_keyboard\lv_ex_keyboard_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_label\lv_ex_label_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_label\lv_ex_label_2.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_label\lv_ex_label_3.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_led\lv_ex_led_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_line\lv_ex_line_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_linemeter\lv_ex_linemeter_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_list\lv_ex_list_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_msgbox\lv_ex_msgbox_2.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_obj\lv_ex_obj_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_objmask\lv_ex_objmask_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_objmask\lv_ex_objmask_2.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_page\lv_ex_page_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_roller\lv_ex_roller_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_msgbox\lv_ex_msgbox_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_slider\lv_ex_slider_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_msgbox\lv_ex_msgbox_2.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_obj\lv_ex_obj_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_objmask\lv_ex_objmask_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_objmask\lv_ex_objmask_2.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_page\lv_ex_page_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_roller\lv_ex_roller_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_slider\lv_ex_slider_2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_slider\lv_ex_slider_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_spinbox\lv_ex_spinbox_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_slider\lv_ex_slider_2.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_spinner\lv_ex_spinner_1.c
-	"../../../lv_examples.h"
-
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_switch\lv_ex_switch_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_spinbox\lv_ex_spinbox_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_table\lv_ex_table_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_spinner\lv_ex_spinner_1.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_tabview\lv_ex_tabview_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_switch\lv_ex_switch_1.c
+	"../../../lv_examples.h"
+	<stdio.h>
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_table\lv_ex_table_1.c
+	"../../../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_tabview\lv_ex_tabview_1.c
 	"../../../lv_examples.h"
 
 1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_templ.c
 	"../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_textarea\lv_ex_textarea_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_textarea\lv_ex_textarea_1.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_textarea\lv_ex_textarea_2.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_textarea\lv_ex_textarea_2.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_textarea\lv_ex_textarea_3.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_textarea\lv_ex_textarea_3.c
 	"../../../lv_examples.h"
 	<stdio.h>
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_tileview\lv_ex_tileview_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_tileview\lv_ex_tileview_1.c
 	"../../../lv_examples.h"
 
-1619763462 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_win\lv_ex_win_1.c
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\lv_ex_widgets\lv_ex_win\lv_ex_win_1.c
 	"../../../lv_examples.h"
 
 1619523592 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lvgl_startup.c
@@ -9316,19 +9319,19 @@
 1619524753 f:\0-repository\lvgl-demo\lv_tp79p\src\lvgl_startup.h
 	"lvgl/lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_disp.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_disp.c
 	"lv_disp.h"
 	"../lv_misc/lv_math.h"
 	"../lv_core/lv_refr.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_group.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_group.c
 	"lv_group.h"
 	<stddef.h>
 	"../lv_misc/lv_debug.h"
 	"../lv_themes/lv_theme.h"
 	"../lv_misc/lv_gc.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_gc.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_gc.h
 	<stdint.h>
 	<stdbool.h>
 	"lv_mem.h"
@@ -9337,7 +9340,7 @@
 	"../lv_draw/lv_img_cache.h"
 	"../lv_draw/lv_draw_mask.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_indev.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_indev.c
 	"lv_indev.h"
 	"lv_disp.h"
 	"lv_obj.h"
@@ -9347,7 +9350,7 @@
 	"../lv_misc/lv_task.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_obj.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_obj.c
 	"lv_obj.h"
 	"lv_indev.h"
 	"lv_refr.h"
@@ -9362,19 +9365,20 @@
 	"../lv_misc/lv_fs.h"
 	"../lv_misc/lv_gc.h"
 	"../lv_misc/lv_math.h"
-	"../lv_misc/lv_gc.h"
-	"../lv_misc/lv_math.h"
 	"../lv_misc/lv_log.h"
 	"../lv_hal/lv_hal.h"
 	<stdint.h>
 	<string.h>
+	"../lv_gpu/lv_gpu_nxp_pxp.h"
+	"../lv_gpu/lv_gpu_nxp_pxp_osa.h"
 	"../lv_gpu/lv_gpu_stm32_dma2d.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_gpu\lv_gpu_stm32_dma2d.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_gpu\lv_gpu_stm32_dma2d.h
 	"../lv_misc/lv_area.h"
 	"../lv_misc/lv_color.h"
+	"../lv_hal/lv_hal_disp.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_refr.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_refr.c
 	<stddef.h>
 	"lv_refr.h"
 	"lv_disp.h"
@@ -9389,26 +9393,27 @@
 	"../lv_gpu/lv_gpu_stm32_dma2d.h"
 	"../lv_widgets/lv_label.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_style.c
-	"lv_obj.h"
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_core\lv_style.c
+	"lv_style.h"
 	"../lv_misc/lv_mem.h"
-	"../lv_misc/lv_anim.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_arc.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_arc.c
 	"lv_draw_arc.h"
 	"lv_draw_rect.h"
 	"lv_draw_mask.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_blend.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_blend.c
 	"lv_draw_blend.h"
 	"lv_img_decoder.h"
 	"../lv_misc/lv_math.h"
 	"../lv_hal/lv_hal_disp.h"
 	"../lv_core/lv_refr.h"
+	"../lv_gpu/lv_gpu_nxp_pxp.h"
+	"../lv_gpu/lv_gpu_nxp_vglite.h"
 	"../lv_gpu/lv_gpu_stm32_dma2d.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_img.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_img.c
 	"lv_draw_img.h"
 	"lv_img_cache.h"
 	"../lv_hal/lv_hal_disp.h"
@@ -9417,8 +9422,9 @@
 	"../lv_misc/lv_mem.h"
 	"../lv_misc/lv_math.h"
 	"../lv_gpu/lv_gpu_stm32_dma2d.h"
+	"../lv_gpu/lv_gpu_nxp_pxp.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_label.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_label.c
 	"lv_draw_label.h"
 	"../lv_misc/lv_math.h"
 	"../lv_hal/lv_hal_disp.h"
@@ -9426,7 +9432,7 @@
 	"../lv_misc/lv_bidi.h"
 	"../lv_misc/lv_debug.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_line.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_line.c
 	<stdio.h>
 	<stdbool.h>
 	"lv_draw_mask.h"
@@ -9434,27 +9440,28 @@
 	"../lv_core/lv_refr.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_mask.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_mask.c
 	"lv_draw_mask.h"
 	"../lv_misc/lv_math.h"
 	"../lv_misc/lv_log.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_misc/lv_gc.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_rect.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_rect.c
 	"lv_draw_rect.h"
 	"lv_draw_blend.h"
 	"lv_draw_mask.h"
 	"../lv_misc/lv_math.h"
+	"../lv_misc/lv_txt_ap.h"
 	"../lv_core/lv_refr.h"
 	"../lv_misc/lv_debug.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_triangle.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_draw_triangle.c
 	"lv_draw_triangle.h"
 	"../lv_misc/lv_math.h"
 	"../lv_misc/lv_mem.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_buf.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_buf.c
 	<stddef.h>
 	<string.h>
 	"lv_img_buf.h"
@@ -9463,7 +9470,7 @@
 	"../lv_misc/lv_log.h"
 	"../lv_misc/lv_mem.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_cache.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_cache.c
 	"../lv_misc/lv_debug.h"
 	"lv_img_cache.h"
 	"lv_img_decoder.h"
@@ -9471,122 +9478,120 @@
 	"../lv_hal/lv_hal_tick.h"
 	"../lv_misc/lv_gc.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_decoder.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_draw\lv_img_decoder.c
 	"lv_img_decoder.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw_img.h"
 	"../lv_misc/lv_ll.h"
-	"../lv_misc/lv_color.h"
 	"../lv_misc/lv_gc.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font.c
 	"lv_font.h"
 	"../lv_misc/lv_utils.h"
 	"../lv_misc/lv_log.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_utils.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_utils.h
 	<stdint.h>
 	<stddef.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_dejavu_16_persian_hebrew.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_dejavu_16_persian_hebrew.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_fmt_txt.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_fmt_txt.c
 	"lv_font.h"
 	"lv_font_fmt_txt.h"
 	"../lv_misc/lv_debug.h"
-	"../lv_draw/lv_draw.h"
 	"../lv_misc/lv_types.h"
 	"../lv_misc/lv_gc.h"
 	"../lv_misc/lv_log.h"
 	"../lv_misc/lv_utils.h"
 	"../lv_misc/lv_mem.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_loader.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_loader.c
 	<stdint.h>
 	<stdbool.h>
 	"../lvgl.h"
 	"../lv_misc/lv_fs.h"
 	"lv_font_loader.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lvgl.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lvgl.h
 	"../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_12.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_12.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_12_subpx.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_12_subpx.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_14.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_14.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_16.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_16.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_18.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_18.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_20.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_20.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_22.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_22.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_24.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_24.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_26.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_26.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_28.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_28.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_28_compressed.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_28_compressed.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_30.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_30.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_32.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_32.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_34.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_34.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_36.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_36.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_38.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_38.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_40.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_40.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_42.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_42.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_44.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_44.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_46.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_46.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_48.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_montserrat_48.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_simsun_16_cjk.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_simsun_16_cjk.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_unscii_8.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font_unscii_8.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_gpu\lv_gpu_stm32_dma2d.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_gpu\lv_gpu_stm32_dma2d.c
 	"lv_gpu_stm32_dma2d.h"
 	"../lv_core/lv_disp.h"
 	"../lv_core/lv_refr.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_disp.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_disp.c
 	<stdint.h>
 	<stddef.h>
 	"lv_hal.h"
@@ -9597,7 +9602,7 @@
 	"../lv_core/lv_refr.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_indev.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_indev.c
 	"../lv_misc/lv_debug.h"
 	"../lv_hal/lv_hal_indev.h"
 	"../lv_core/lv_indev.h"
@@ -9605,11 +9610,11 @@
 	"../lv_misc/lv_gc.h"
 	"lv_hal_disp.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_tick.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_hal\lv_hal_tick.c
 	"lv_hal_tick.h"
 	<stddef.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_anim.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_anim.c
 	"lv_anim.h"
 	<stddef.h>
 	<string.h>
@@ -9619,125 +9624,127 @@
 	"lv_math.h"
 	"lv_gc.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_area.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_area.c
 	"../lv_conf_internal.h"
 	"lv_area.h"
 	"lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_async.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_async.c
 	"lv_async.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_bidi.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_bidi.c
 	<stddef.h>
 	"lv_bidi.h"
 	"lv_txt.h"
 	"../lv_misc/lv_mem.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_color.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_color.c
 	"lv_color.h"
-	"lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_debug.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_debug.c
 	"lv_debug.h"
 	"lv_mem.h"
 	<string.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_fs.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_fs.c
 	"lv_fs.h"
 	"../lv_misc/lv_debug.h"
 	"lv_ll.h"
 	<string.h>
 	"lv_gc.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_gc.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_gc.c
 	"lv_gc.h"
 	"string.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_ll.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_ll.c
 	<stdint.h>
 	<string.h>
 	"lv_ll.h"
 	"lv_mem.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_log.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_log.c
 	"lv_log.h"
 	<stdarg.h>
 	<string.h>
 	"lv_printf.h"
 	<stdio.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_math.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_math.c
 	"lv_math.h"
 	<stdbool.h>
 	<stdlib.h>
 	<string.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_mem.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_mem.c
 	"lv_mem.h"
 	"lv_math.h"
 	"lv_gc.h"
+	"lv_debug.h"
 	<string.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_printf.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_printf.c
 	"lv_printf.h"
 	<stdbool.h>
 	<stdint.h>
 	<float.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_task.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_task.c
 	<stddef.h>
 	"lv_task.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_hal/lv_hal_tick.h"
 	"lv_gc.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_templ.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_templ.c
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_txt.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_txt.c
+	<stdarg.h>
 	"lv_txt.h"
+	"lv_txt_ap.h"
 	"lv_math.h"
 	"lv_log.h"
+	"lv_debug.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_txt_ap.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_txt_ap.c
 	<stddef.h>
 	"lv_bidi.h"
 	"lv_txt.h"
 	"lv_txt_ap.h"
 	"../lv_draw/lv_draw.h"
 
-1619763464 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_txt_ap.h
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_txt_ap.h
 	<stddef.h>
 	"lv_txt.h"
 	"../lv_draw/lv_draw.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_utils.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_misc\lv_utils.c
 	<stdbool.h>
 	"lv_utils.h"
 	"lv_math.h"
 	"lv_printf.h"
 	"lv_txt.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme.c
 	"../../lvgl.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_empty.c
-	<stdint.h>
-	"../../lvgl.h"
-	"../lv_misc/lv_gc.h"
-
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_material.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_empty.c
 	"../../lvgl.h"
 	"../lv_misc/lv_gc.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_mono.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_material.c
 	"../../lvgl.h"
 	"../lv_misc/lv_gc.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_template.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_mono.c
 	"../../lvgl.h"
 	"../lv_misc/lv_gc.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_arc.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_themes\lv_theme_template.c
+	"../../lvgl.h"
+	"../lv_misc/lv_gc.h"
+
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_arc.c
 	"lv_arc.h"
 	"../lv_core/lv_group.h"
 	"../lv_core/lv_indev.h"
@@ -9746,7 +9753,7 @@
 	"../lv_draw/lv_draw_arc.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_bar.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_bar.c
 	"lv_bar.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw.h"
@@ -9755,7 +9762,7 @@
 	"../lv_misc/lv_math.h"
 	<stdio.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_btn.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_btn.c
 	"lv_btn.h"
 	<string.h>
 	"../lv_core/lv_group.h"
@@ -9766,7 +9773,7 @@
 	"../lv_misc/lv_color.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_btnmatrix.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_btnmatrix.c
 	"lv_btnmatrix.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_core/lv_group.h"
@@ -9774,8 +9781,9 @@
 	"../lv_core/lv_refr.h"
 	"../lv_themes/lv_theme.h"
 	"../lv_misc/lv_txt.h"
+	"../lv_misc/lv_txt_ap.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_calendar.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_calendar.c
 	"lv_calendar.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw.h"
@@ -9785,7 +9793,7 @@
 	"../lv_themes/lv_theme.h"
 	<string.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_canvas.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_canvas.c
 	<stdlib.h>
 	"lv_canvas.h"
 	"../lv_misc/lv_debug.h"
@@ -9794,7 +9802,7 @@
 	"../lv_core/lv_refr.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_chart.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_chart.c
 	"lv_chart.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_core/lv_refr.h"
@@ -9802,13 +9810,13 @@
 	"../lv_misc/lv_math.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_checkbox.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_checkbox.c
 	"lv_checkbox.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_core/lv_group.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_cont.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_cont.c
 	"lv_cont.h"
 	<stdbool.h>
 	<stdint.h>
@@ -9821,7 +9829,7 @@
 	"../lv_misc/lv_color.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_cpicker.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_cpicker.c
 	"lv_cpicker.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw_arc.h"
@@ -9830,7 +9838,7 @@
 	"../lv_core/lv_refr.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_dropdown.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_dropdown.c
 	"lv_dropdown.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw.h"
@@ -9841,9 +9849,10 @@
 	"../lv_font/lv_symbol_def.h"
 	"../lv_misc/lv_anim.h"
 	"../lv_misc/lv_math.h"
+	"../lv_misc/lv_txt_ap.h"
 	<string.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_gauge.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_gauge.c
 	"lv_gauge.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw.h"
@@ -9855,7 +9864,7 @@
 	<stdio.h>
 	<string.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_img.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_img.c
 	"lv_img.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_themes/lv_theme.h"
@@ -9865,19 +9874,19 @@
 	"../lv_misc/lv_math.h"
 	"../lv_misc/lv_log.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_imgbtn.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_imgbtn.c
 	"../lv_misc/lv_debug.h"
 	"../lv_themes/lv_theme.h"
 	"lv_imgbtn.h"
 	"lv_label.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_keyboard.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_keyboard.c
 	"lv_keyboard.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_themes/lv_theme.h"
 	"lv_textarea.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_label.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_label.c
 	"lv_label.h"
 	"../lv_core/lv_obj.h"
 	"../lv_misc/lv_debug.h"
@@ -9890,13 +9899,13 @@
 	"../lv_misc/lv_printf.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_led.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_led.c
 	"lv_led.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_themes/lv_theme.h"
 	"../lv_draw/lv_draw.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_line.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_line.c
 	"lv_line.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw.h"
@@ -9906,7 +9915,7 @@
 	<stdint.h>
 	<string.h>
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_linemeter.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_linemeter.c
 	"lv_linemeter.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw.h"
@@ -9914,7 +9923,7 @@
 	"../lv_core/lv_group.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_list.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_list.c
 	"lv_list.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_core/lv_group.h"
@@ -9922,7 +9931,7 @@
 	"../lv_misc/lv_anim.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_msgbox.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_msgbox.c
 	"lv_msgbox.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_core/lv_group.h"
@@ -9931,16 +9940,16 @@
 	"../lv_misc/lv_anim.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_objmask.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_objmask.c
 	"lv_objmask.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_objx_templ.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_objx_templ.c
 	"../lv_misc/lv_debug.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_page.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_page.c
 	"../lv_widgets/lv_page.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_core/lv_group.h"
@@ -9950,14 +9959,14 @@
 	"../lv_misc/lv_anim.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_roller.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_roller.c
 	"lv_roller.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw.h"
 	"../lv_core/lv_group.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_slider.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_slider.c
 	"lv_slider.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_core/lv_group.h"
@@ -9967,14 +9976,14 @@
 	"../lv_misc/lv_math.h"
 	"lv_img.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_spinbox.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_spinbox.c
 	"lv_spinbox.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_themes/lv_theme.h"
 	"../lv_misc/lv_math.h"
 	"../lv_misc/lv_utils.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_spinner.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_spinner.c
 	"lv_spinner.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_misc/lv_math.h"
@@ -9982,7 +9991,7 @@
 	"../lv_draw/lv_draw_arc.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_switch.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_switch.c
 	"lv_switch.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_themes/lv_theme.h"
@@ -9991,16 +10000,18 @@
 	"../lv_core/lv_disp.h"
 	"lv_img.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_table.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_table.c
 	"lv_table.h"
-	"../lv_misc/lv_debug.h"
 	"../lv_core/lv_indev.h"
+	"../lv_misc/lv_debug.h"
 	"../lv_misc/lv_txt.h"
+	"../lv_misc/lv_txt_ap.h"
 	"../lv_misc/lv_math.h"
+	"../lv_misc/lv_printf.h"
 	"../lv_draw/lv_draw_label.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_tabview.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_tabview.c
 	"lv_tabview.h"
 	"lv_btnmatrix.h"
 	"../lv_misc/lv_debug.h"
@@ -10008,7 +10019,7 @@
 	"../lv_misc/lv_anim.h"
 	"../lv_core/lv_disp.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_textarea.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_textarea.c
 	"lv_textarea.h"
 	<string.h>
 	"../lv_misc/lv_debug.h"
@@ -10020,7 +10031,7 @@
 	"../lv_misc/lv_txt.h"
 	"../lv_misc/lv_math.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_tileview.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_tileview.c
 	"lv_tileview.h"
 	<stdbool.h>
 	"lv_cont.h"
@@ -10028,7 +10039,7 @@
 	"../lv_misc/lv_debug.h"
 	"../lv_themes/lv_theme.h"
 
-1619763464 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_win.c
+1615854692 source:f:\0-repository\lvgl-demo\lvgl\src\lv_widgets\lv_win.c
 	"lv_win.h"
 	"../lv_misc/lv_debug.h"
 	"../lv_themes/lv_theme.h"
@@ -10043,13 +10054,13 @@
 	"lv_tp79p/src/lv_startup.h"
 	<windows.h>
 
-1622033329 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
+1622082244 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
 	"../lv_tp79p.h"
 	"lv_desktop.h"
 
 1620899702 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.h
 
-1622033305 f:\0-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
+1622033439 f:\0-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
 	"lvgl.h"
 	"../lvgl/lvgl.h"
 	"lv_ex_conf.h"
@@ -11970,7 +11981,7 @@
 	"lv_event.h"
 	"lv_startup.h"
 
-1622033348 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
+1622080866 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
 	"../lv_tp79p.h"
 	"lv_menu.h"
 
@@ -12033,4 +12044,22 @@
 	"lv_blight.h"
 
 1622039390 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_blight.h
+
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_conf_kconfig.h
+	"sdkconfig.h"
+	"esp_attr.h"
+	<nuttx/config.h>
+
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_demo_music\lv_demo_music.h
+	"../../lv_examples.h"
+
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_gpu\lv_gpu_nxp_pxp.h
+	"../lv_misc/lv_area.h"
+	"../lv_misc/lv_color.h"
+
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_gpu\lv_gpu_nxp_pxp_osa.h
+	"../lv_conf_internal.h"
+
+1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_gpu\lv_gpu_nxp_vglite.h
+	"lv_misc/lv_area.h"
 
