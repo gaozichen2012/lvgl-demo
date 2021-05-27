@@ -8228,7 +8228,7 @@
 1621998867 f:\0-repository\lvgl-demo\lv_drv_conf.h
 	"lv_conf.h"
 
-1622082317 f:\0-repository\lvgl-demo\lv_conf.h
+1622105646 f:\0-repository\lvgl-demo\lv_conf.h
 	<stdint.h>
 
 1615854692 f:\0-repository\lvgl-demo\lvgl\lvgl.h
@@ -8391,7 +8391,7 @@
 	"../lv_misc/lv_debug.h"
 	"../lv_draw/lv_draw_blend.h"
 
-1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font.h
+1622094154 f:\0-repository\lvgl-demo\lvgl\src\lv_font\lv_font.h
 	"../lv_conf_internal.h"
 	<stdint.h>
 	<stddef.h>
@@ -10054,13 +10054,13 @@
 	"lv_tp79p/src/lv_startup.h"
 	<windows.h>
 
-1622082244 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
+1622105398 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
 	"../lv_tp79p.h"
 	"lv_desktop.h"
 
 1620899702 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.h
 
-1622033439 f:\0-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
+1622095050 f:\0-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
 	"lvgl.h"
 	"../lvgl/lvgl.h"
 	"lv_ex_conf.h"
@@ -12062,4 +12062,86 @@
 
 1615854692 f:\0-repository\lvgl-demo\lvgl\src\lv_gpu\lv_gpu_nxp_vglite.h
 	"lv_misc/lv_area.h"
+
+1622098518 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\font_tom_12.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\assets\img_cogwheel_alpha16.c
+	"../lv_examples.h"
+
+1615854790 f:\0-repository\lvgl-demo\lv_examples\src\lv_examples.h
+	"../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\assets\img_cogwheel_argb.c
+	"../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\assets\img_cogwheel_chroma_keyed.c
+	"../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\assets\img_cogwheel_indexed16.c
+	"../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\assets\img_cogwheel_rgb.c
+	"../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\assets\img_hand.c
+	"../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\assets\lv_font_montserrat_12_compr_az.c
+	"../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\assets\lv_font_montserrat_16_compr_az.c
+	"../lv_examples.h"
+
+1615854790 source:f:\0-repository\lvgl-demo\lv_examples\src\assets\lv_font_montserrat_28_compr_az.c
+	"../lv_examples.h"
+
+1622099438 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\font_tom_16.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622100389 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_black_16.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622104092 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_light_16.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622103907 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_regular_16.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622103747 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_regular_12.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622104291 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_light_12.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622105048 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_light_bpp4_12.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622105190 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_light_bpp4_16.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622106275 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_regular_bpp4_12.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622105966 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_regular_bpp4_16.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622113705 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_regular_bpp2_12.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1622113831 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\notosanssc_regular_bpp2_16.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
 

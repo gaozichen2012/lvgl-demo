@@ -5,6 +5,9 @@ LV_IMG_DECLARE(user_20x20);
 LV_IMG_DECLARE(group_20x20);
 LV_IMG_DECLARE(freq_20x20);
 
+LV_FONT_DECLARE(NotoSansSC_Regular_bpp2_12);
+LV_FONT_DECLARE(NotoSansSC_Regular_bpp2_16);
+
 static lv_group_t *g;
 lv_obj_t *desktop_cont;
 
@@ -83,12 +86,21 @@ static void bottom_bar(lv_obj_t *parent)
     lv_btn_set_checkable(btn, true);
     lv_btn_toggle(btn);
     lv_obj_t *label = lv_label_create(btn, NULL);
-    lv_label_set_text(label, "Menu");
+    lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_12);
+#if 1
+    lv_label_set_text(label, "菜单");
+#else
+    lv_label_set_text(label, "\xE4\xB8\x80"
+                             "\xE4\xB8\x83");
+#endif
+
+    //lv_label_set_text(label, "Menu");
 }
 
 static void central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
     lv_obj_t *cont;
+    lv_obj_t *label;
 
     cont = lv_cont_create(parent, NULL);
     lv_obj_set_size(cont, 160, 128 - 16);
@@ -98,16 +110,18 @@ static void central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
     lv_obj_t *img1 = lv_img_create(cont, NULL);
     lv_img_set_src(img1, &user_20x20);
     lv_obj_align(img1, cont, LV_ALIGN_IN_TOP_LEFT, 15, 25);
-    lv_obj_t *label1 = lv_label_create(cont, NULL);
-    lv_label_set_text(label1, "TOM NAME"); //
-    lv_obj_align(label1, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 25 + 2);
+    label = lv_label_create(cont, NULL);
+    lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_12);
+    lv_label_set_text(label, "TOM群组12abCDQ"); //
+    lv_obj_align(label, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 25 + 2);
 
     lv_obj_t *img2 = lv_img_create(cont, NULL);
     lv_img_set_src(img2, &group_20x20);
     lv_obj_align(img2, img1, LV_ALIGN_OUT_BOTTOM_MID, 0, 5);
-    lv_obj_t *label2 = lv_label_create(cont, NULL);
-    lv_label_set_text(label2, "TOM GROUP");
-    lv_obj_align(label2, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 25 + 2 + 20 + 5);
+    label = lv_label_create(cont, NULL);
+    lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_12);
+    lv_label_set_text(label, "高子晨,.!123RTYadgf");
+    lv_obj_align(label, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 25 + 2 + 20 + 5);
 
     bottom_bar(cont);
 }
