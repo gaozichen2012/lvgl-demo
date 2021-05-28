@@ -130,6 +130,15 @@ static void central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
     lv_obj_set_size(cont, 160, 128 - 16);
     lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
 
+    lv_obj_t *img = lv_img_create(cont, NULL);
+    lv_img_set_src(img, LV_SYMBOL_VOLUME_MAX);
+    lv_obj_align(img, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 5, 3);
+
+    label = lv_label_create(cont, NULL);
+    lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_12);
+    lv_label_set_text(label, "本机正在说话... 150s");
+    lv_obj_align(label, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 5);
+
     lv_obj_t *img1 = lv_img_create(cont, NULL);
     lv_img_set_src(img1, &user_20x20);
     lv_obj_align(img1, cont, LV_ALIGN_IN_TOP_LEFT, 15, 25);

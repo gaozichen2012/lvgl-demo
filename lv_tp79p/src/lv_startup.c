@@ -12,6 +12,28 @@ lv_obj_t *menu_net_src;
 
 static lv_style_t style_box;
 
+void page_refresh(PAGE_ID page)
+{
+    //登录时未刷新，下周来先来排查，怀疑是成员好友数据变了，lvgl未检测到
+    switch (page)
+    {
+    case PAGE_DESKTOP:
+        lv_event_send_refresh_recursive(all_src.desktop_src);
+        break;
+    case PAGE_MENU:
+        lv_event_send_refresh_recursive(all_src.menu_src);
+        break;
+    case PAGE_SETING:
+        lv_event_send_refresh_recursive(all_src.setting_src);
+        break;
+    case PAGE_BLIGHT:
+        lv_event_send_refresh_recursive(all_src.blight_src);
+        break;
+    default:
+        break;
+    }
+}
+
 void page_switch(PAGE_ID page)
 {
     lv_obj_clean(all_src.desktop_src);

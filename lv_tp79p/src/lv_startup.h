@@ -26,6 +26,8 @@ typedef struct
 
 ALL_SRC all_src;
 
+void page_refresh(PAGE_ID page);
+void page_switch(PAGE_ID page);
 void lv_startup(void);
 
 #endif
