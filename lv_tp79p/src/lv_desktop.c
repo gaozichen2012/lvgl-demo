@@ -301,6 +301,12 @@ iEds =0大端 =1小端
 0xe7
 0xbb
 0x84
+
+对于英文
+"0020"
+
+最终要转换为0x20,占1位
+
 */
 
 unsigned char ui_ascii_to_char(unsigned char nib_h, unsigned char nib_l)
@@ -333,19 +339,20 @@ void data_conv(char *pStr, unsigned char *des, unsigned char iEds)
 
         if (usUnicode <= 0x007e)
         {
+            enc_unicode_to_utf8_one((unsigned long)usUnicode, &des[i]);
+            i += 1;
         }
         else
         {
-            enc_unicode_to_utf8_one((unsigned long)usUnicode, &des[3 * i]);
+            enc_unicode_to_utf8_one((unsigned long)usUnicode, &des[i]);
+            i += 3;
         }
-
-        i++;
         pStr += 4;
     }
 }
 
-#define c_input_password "8bf763094e0a4e0b952e8f9351655bc67801"                 //请按上下键输入密码
-#define TTS_net_mode_disable_channel "6C51517F216A0F5F8179626B07526263E14F5390" //公网模式禁止切换信道
+#define c_input_password "0031003200398bf763094e0a4e0b952e8f9351655bc600610064007a7801" //请按上下键输入密码
+#define TTS_net_mode_disable_channel "7a0032006C51517F216A0F5F8179626B07526263E14F5390" //公网模式禁止切换信道
 
 static void central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
