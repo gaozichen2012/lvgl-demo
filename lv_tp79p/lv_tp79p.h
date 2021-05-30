@@ -39,6 +39,9 @@ extern "C"
 #include "lvgl_indev.h"
 #endif
 
+  LV_FONT_DECLARE(NotoSansSC_Regular_bpp2_12);
+  LV_FONT_DECLARE(NotoSansSC_Regular_bpp2_16);
+
 /*********************
  *      DEFINES
  *********************/

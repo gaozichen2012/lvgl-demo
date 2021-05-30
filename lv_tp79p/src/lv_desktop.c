@@ -9,9 +9,6 @@ LV_IMG_DECLARE(user_20x20);
 LV_IMG_DECLARE(group_20x20);
 LV_IMG_DECLARE(freq_20x20);
 
-LV_FONT_DECLARE(NotoSansSC_Regular_bpp2_12);
-LV_FONT_DECLARE(NotoSansSC_Regular_bpp2_16);
-
 static lv_group_t *g;
 lv_obj_t *desktop_cont;
 
@@ -82,24 +79,36 @@ static void sim_event_ok_handler(lv_obj_t *obj, lv_event_t event)
 
 static void bottom_bar(lv_obj_t *parent)
 {
-    lv_obj_t *btn = lv_btn_create(parent, NULL);
 #ifndef EC20
+    lv_obj_t *btn = lv_btn_create(parent, NULL);
     lv_obj_set_event_cb(btn, sim_event_ok_handler);
-#endif
     lv_obj_set_size(btn, 40, 20);
-    lv_obj_align(btn, parent, LV_ALIGN_IN_BOTTOM_LEFT, 5, -5);
+    lv_obj_align(btn, parent, LV_ALIGN_IN_BOTTOM_LEFT, 5, -2);
     lv_btn_set_checkable(btn, true);
     lv_btn_toggle(btn);
     lv_obj_t *label = lv_label_create(btn, NULL);
     lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_16);
-#if 1
     lv_label_set_text(label, "菜单");
 #else
-    lv_label_set_text(label, "\xE4\xB8\x80"
-                             "\xE4\xB8\x83");
-#endif
+    static lv_style_t style1;
+    lv_obj_t *cont;
 
-    //lv_label_set_text(label, "Menu");
+    lv_style_init(&style1);
+    lv_style_set_text_font(&style1, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_12);
+    lv_style_set_text_color(&style1, LV_STATE_DEFAULT, lv_color_hex(0xffffff));
+    lv_style_set_bg_color(&style1, LV_STATE_DEFAULT, lv_color_hex(0xf88));
+
+    cont = lv_cont_create(parent, NULL);
+    lv_obj_add_style(cont, LV_OBJ_PART_MAIN, &style1);
+    lv_obj_set_size(cont, 160 - 4, 20);
+    lv_obj_align(cont, parent, LV_ALIGN_IN_BOTTOM_MID, 0, 0);
+
+    lv_obj_t *label = lv_label_create(cont, NULL);
+    lv_obj_align(label, cont, LV_ALIGN_IN_LEFT_MID, 5, 0);
+    lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_12);
+
+    lv_label_set_text(label, "菜单");
+#endif
 }
 
 #define c_input_password "0031003200398bf763094e0a4e0b952e8f9351655bc600610064007a7801" //请按上下键输入密码
@@ -107,6 +116,7 @@ static void bottom_bar(lv_obj_t *parent)
 
 static void central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
+
     lv_obj_t *cont;
     lv_obj_t *label;
     char user_name[3 * 12 + 1];
