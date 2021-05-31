@@ -137,6 +137,7 @@ static void central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
 
     char cSendCnt[10];
 
+    memset(state_name, 0, sizeof(state_name));
     memset(user_name, 0, sizeof(user_name));
     memset(group_name, 0, sizeof(group_name));
 
