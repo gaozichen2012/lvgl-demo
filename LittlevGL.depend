@@ -10054,13 +10054,14 @@
 	"lv_tp79p/src/lv_startup.h"
 	<windows.h>
 
-1622189898 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
+1622423376 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.c
 	"../lv_tp79p.h"
 	"lv_desktop.h"
+	"Zpoc.h"
 
 1620899702 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_desktop.h
 
-1622095050 f:\0-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
+1622423376 f:\0-repository\lvgl-demo\lv_tp79p\lv_tp79p.h
 	"lvgl.h"
 	"../lvgl/lvgl.h"
 	"lv_ex_conf.h"
@@ -11993,7 +11994,7 @@
 	"lv_event.h"
 	"lv_startup.h"
 
-1622080866 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
+1622425251 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_menu.c
 	"../lv_tp79p.h"
 	"lv_menu.h"
 
@@ -12001,7 +12002,7 @@
 	"../lv_tp79p.h"
 	"lv_menu_net.h"
 
-1622194069 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
+1622423376 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_startup.c
 	"../lv_tp79p.h"
 	"lv_startup.h"
 	"lv_desktop.h"
@@ -12031,7 +12032,7 @@
 
 1621953295 d:\3-repository\lvgl-demo\lv_tp79p\src\lv_setting.h
 
-1622033356 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_setting.c
+1622425263 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_setting.c
 	"../lv_tp79p.h"
 	"lv_setting.h"
 
@@ -12039,7 +12040,7 @@
 
 1622018361 f:\0-repository\lvgl-demo\lv_tp79p\src\lv_blight.h
 
-1622193541 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_blight.c
+1622423376 source:f:\0-repository\lvgl-demo\lv_tp79p\src\lv_blight.c
 	"../lv_tp79p.h"
 	"lv_blight.h"
 
@@ -12212,4 +12213,8 @@
 
 1622366696 d:\3-repository\lvgl-demo\lvgl\src\lv_gpu\lv_gpu_nxp_vglite.h
 	"lv_misc/lv_area.h"
+
+1622425054 source:f:\0-repository\lvgl-demo\lv_tp79p\assets\group_50x50.c
+	"lvgl.h"
+	"lvgl/lvgl.h"
 

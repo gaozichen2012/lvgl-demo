@@ -4,6 +4,7 @@
 LV_IMG_DECLARE(user_20x20);
 LV_IMG_DECLARE(group_20x20);
 LV_IMG_DECLARE(freq_20x20);
+LV_IMG_DECLARE(group_50x50);
 LV_IMG_DECLARE(group_80x80);
 
 static lv_group_t *g;

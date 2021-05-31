@@ -4,6 +4,7 @@
 LV_IMG_DECLARE(user_20x20);
 LV_IMG_DECLARE(group_20x20);
 LV_IMG_DECLARE(freq_20x20);
+LV_IMG_DECLARE(group_50x50);
 LV_IMG_DECLARE(group_80x80);
 
 static lv_group_t *g;
@@ -129,41 +130,37 @@ static void bottom_bar(lv_obj_t *parent)
 
 void lv_menu(lv_obj_t *parent)
 {
-    lv_obj_t *menu_cont = lv_cont_create(parent, NULL);
-    lv_obj_set_size(menu_cont, 160, 128);
-
-    lv_obj_t *cont1 = lv_cont_create(menu_cont, NULL);
-    lv_obj_set_size(cont1, 160, 126 - 20);
-
-    menu_list = lv_list_create(cont1, NULL);
+    menu_list = lv_list_create(parent, NULL);
     lv_obj_set_event_cb(menu_list, event_handler); //此句可能会对实际运行有影响
     //lv_list_set_anim_time(menu_list, 50);
-    lv_list_set_layout(menu_list, LV_LAYOUT_ROW_MID); //水平滚动的列表
-    lv_obj_set_size(menu_list, 160, 128 - 50);
+    //lv_list_set_layout(menu_list, LV_LAYOUT_ROW_MID); //水平滚动的列表
+    //lv_obj_set_size(menu_list, 160, 128 - 50);
+
+    lv_obj_set_size(menu_list, 160, 128 - 20);
     lv_obj_align(menu_list, NULL, LV_ALIGN_IN_TOP_MID, 0, 0);
 
     /*Add buttons to the list*/
     lv_obj_t *list_btn;
 
-    list_btn = lv_list_add_btn(menu_list, &group_80x80, "group select");
+    list_btn = lv_list_add_btn(menu_list, &user_20x20, "group select");
     lv_obj_set_event_cb(list_btn, event_handler);
 
-    list_btn = lv_list_add_btn(menu_list, &group_80x80, "member select");
+    list_btn = lv_list_add_btn(menu_list, &user_20x20, "member select");
     lv_obj_set_event_cb(list_btn, event_handler);
 
-    list_btn = lv_list_add_btn(menu_list, &group_80x80, "friend select");
+    list_btn = lv_list_add_btn(menu_list, &user_20x20, "friend select");
     lv_obj_set_event_cb(list_btn, event_handler);
 
-    list_btn = lv_list_add_btn(menu_list, &group_80x80, "GPS");
+    list_btn = lv_list_add_btn(menu_list, &user_20x20, "GPS");
     lv_obj_set_event_cb(list_btn, event_handler);
 
-    list_btn = lv_list_add_btn(menu_list, &group_80x80, "record");
+    list_btn = lv_list_add_btn(menu_list, &user_20x20, "record");
     lv_obj_set_event_cb(list_btn, event_handler);
 
-    list_btn = lv_list_add_btn(menu_list, &group_80x80, "POC settings");
+    list_btn = lv_list_add_btn(menu_list, &user_20x20, "POC settings");
     lv_obj_set_event_cb(list_btn, event_handler);
 
-    bottom_bar(menu_cont);
+    bottom_bar(parent);
 
     g = lv_group_create();
     lv_group_add_obj(g, menu_list);
