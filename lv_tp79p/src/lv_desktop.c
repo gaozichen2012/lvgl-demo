@@ -114,46 +114,81 @@ static void bottom_bar(lv_obj_t *parent)
 #define c_input_password "0031003200398bf763094e0a4e0b952e8f9351655bc600610064007a7801" //请按上下键输入密码
 #define TTS_net_mode_disable_channel "7a0032006C51517F216A0F5F8179626B07526263E14F5390" //公网模式禁止切换信道
 
+static void central_area_event_handler(lv_obj_t *obj, lv_event_t event)
+{
+    printf("event_handler: %d\n", event);
+
+    if (event == LV_EVENT_REFRESH)
+    {
+    }
+}
+
 static void central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
 {
 
     lv_obj_t *cont;
     lv_obj_t *label;
+    lv_obj_t *label1;
+    lv_obj_t *label2;
+
+    char state_name[3 * 12 + 1];
     char user_name[3 * 12 + 1];
     char group_name[3 * 12 + 1];
 
-    unsigned long tom_unicode_test = 0x7FA4;
-    unsigned char tom_utf8_test[10] = {0};
+    char cSendCnt[10];
 
     memset(user_name, 0, sizeof(user_name));
     memset(group_name, 0, sizeof(group_name));
 
 #ifdef EC20
+
+    if (0)
+    {
+        memcpy(state_name, "空闲", strlen("空闲"));
+    }
+    else if (1)
+    {
+        memcpy(state_name, "本机正在说话...", strlen("本机正在说话..."));
+    }
+    else if (0)
+    {
+        data_conv(iUserInfo.ucTalkName, state_name, 1);
+    }
+    sprintf(cSendCnt, "%2dS", iRunPar.ucSendCnt);
+
     data_conv(iUserInfo.ucUserName, user_name, 1);
     data_conv(iUserInfo.ucGroupName, group_name, 1);
 #else
+    memcpy(state_name, "本机正在说话...", strlen("本机正在说话..."));
+    sprintf(cSendCnt, "%2dS", 150);
+
     memcpy(user_name, "高子晨TOM 1", strlen("高子晨用户名"));
     memcpy(group_name, "高子晨GROUP 1", strlen("高子晨GROUP 1"));
-#endif
+#endif //#ifdef EC20
 
     cont = lv_cont_create(parent, NULL);
+    lv_obj_set_event_cb(cont, central_area_event_handler);
     lv_obj_set_size(cont, 160, 128 - 16);
     lv_obj_align(cont, obj_ref, LV_ALIGN_OUT_BOTTOM_MID, 0, 0);
 
     lv_obj_t *img = lv_img_create(cont, NULL);
     lv_img_set_src(img, LV_SYMBOL_VOLUME_MAX);
-    lv_obj_align(img, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 5, 3);
-
-    label = lv_label_create(cont, NULL);
-    lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_12);
-    lv_label_set_text(label, "本机正在说话... 150s");
-    lv_obj_align(label, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 5);
+    lv_obj_align(img, cont, LV_ALIGN_IN_TOP_LEFT, 10, 3);
+    label1 = lv_label_create(cont, NULL);
+    lv_obj_set_style_local_text_font(label1, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_12);
+    lv_obj_set_style_local_text_color(label1, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, LV_COLOR_RED);
+    lv_label_set_text(label1, state_name);
+    lv_obj_align(label1, img, LV_ALIGN_OUT_RIGHT_MID, 5, 0);
+    label2 = lv_label_create(cont, NULL);
+    lv_obj_set_style_local_text_color(label2, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, LV_COLOR_RED);
+    lv_label_set_text(label2, cSendCnt);
+    lv_obj_align(label2, label1, LV_ALIGN_OUT_RIGHT_MID, 10, 0);
 
     lv_obj_t *img1 = lv_img_create(cont, NULL);
     lv_img_set_src(img1, &user_20x20);
     lv_obj_align(img1, cont, LV_ALIGN_IN_TOP_LEFT, 15, 25);
     label = lv_label_create(cont, NULL);
-    lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_16);
+    lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_12);
     lv_label_set_text(label, user_name);
     lv_obj_align(label, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 25 + 2);
 
@@ -161,7 +196,7 @@ static void central_area(lv_obj_t *parent, lv_obj_t *obj_ref)
     lv_img_set_src(img2, &group_20x20);
     lv_obj_align(img2, img1, LV_ALIGN_OUT_BOTTOM_MID, 0, 5);
     label = lv_label_create(cont, NULL);
-    lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_16);
+    lv_obj_set_style_local_text_font(label, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &NotoSansSC_Regular_bpp2_12);
     lv_label_set_text(label, group_name);
     lv_obj_align(label, cont, LV_ALIGN_IN_TOP_LEFT, 15 + 20 + 5, 25 + 2 + 20 + 5);
 
